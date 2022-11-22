@@ -423,7 +423,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285523799}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -6.18}
+  m_LocalPosition: {x: 0, y: 1.51, z: -6.18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -606,6 +606,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92a1f60ee4215ac44a32ebd1d9b0107c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cameraContainer: {fileID: 529565793}
+  minXLook: -80
+  maxXLook: 80
+  looksensitivity: 0.15
 --- !u!114 &1968256185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -660,7 +664,19 @@ MonoBehaviour:
     m_ActionId: 9a19b566-1068-4f9c-816b-94d787f8fd80
     m_ActionName: Main/interact Action[/Keyboard/e]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1968256184}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnLookInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 972b3ddb-99b9-4a56-9fe8-a63cf98dd7dc
     m_ActionName: Main/Mouse Look[/Mouse/delta]
   m_NeverAutoSwitchControlSchemes: 0
