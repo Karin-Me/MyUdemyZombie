@@ -38,6 +38,8 @@ public class PlayerNeeds : MonoBehaviour
             health.Subtract(NoHungerHPDecay * Time.deltaTime);
         }
 
+        // check if thirst bar reach zero then
+        //  thirst 막대가 0에 도달하면 
         if (thirst.currentValue == 0.0f)
         {
             thirst.Subtract(noThirstHPDecay * Time.deltaTime);
@@ -50,6 +52,7 @@ public class PlayerNeeds : MonoBehaviour
         }
 
         // update sliders
+        // 슬라이더 업데이트
         health.uiSlider.fillAmount = health.GetPercentage();
         hunger.uiSlider.fillAmount = hunger.GetPercentage();
         thirst.uiSlider.fillAmount = thirst.GetPercentage();
@@ -57,6 +60,8 @@ public class PlayerNeeds : MonoBehaviour
 
     public void Heal(float amount)
     {
+        // add to health depend on that amount
+        // amount 에 따라 health 가 추가됩니다..
         health.Add(amount);
     }
 
@@ -72,13 +77,17 @@ public class PlayerNeeds : MonoBehaviour
 
     public void TakeDamage(int damageAmount)
     {
+        // reduce health depend on damage amount
+        // damage 에 따라 health 가 감소합니다.
         health.Subtract(damageAmount);
+        // if we get damage then invoke
+        // damage 를 받으면 invoke 함수를 호출합니다.
+        getDamage?.Invoke();
     }
 
     public void Die()
     {
-        Debug.Log("Player Died");
-        getDamage?.Invoke();
+        Debug.Log("Player Died");        
 
     }
 }
@@ -92,18 +101,24 @@ public class Need
 
     public void Add(float amount)
     {
-                       // 둘 이상의 값 중 가장 작은 값을 반환합니다.
+                        // surrent value is the maximum value of 2 number
+                        // 현재값은 최소값의 2 숫자입니다.
+                       // (Mathf.Min 둘 이상의 값 중 가장 작은 값을 반환합니다.)
         currentValue = Mathf.Min(currentValue + amount, maxValue);
     }
 
     public void Subtract(float amount)
     {
-                       // 둘 이상의 값 중 가장 큰 값을 반환합니다.
+                        // surrent value is the maximum value of 2 number
+                        // 현재값은 최대값의 2 숫자입니다.
+                       // (Mathf.Max 둘 이상의 값 중 가장 큰 값을 반환합니다.)
         currentValue = Mathf.Max(currentValue - amount, 0.0f);
     }
 
     public float GetPercentage()
     {
+        // return us the result divided between current value and max value
+        // 현재 값과 최대 값 사이에서 나눈 결과를 반환합니다.
         return currentValue / maxValue;
     }
 
