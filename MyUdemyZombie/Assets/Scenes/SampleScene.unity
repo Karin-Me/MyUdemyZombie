@@ -459,7 +459,7 @@ GameObject:
   - component: {fileID: 1491264251}
   - component: {fileID: 1491264250}
   - component: {fileID: 1491264249}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -574,7 +574,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1968256180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 2.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -611,7 +611,7 @@ CapsuleCollider:
   m_Radius: 0.24
   m_Height: 1.8
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!114 &1968256184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -629,6 +629,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f6cdeac1b216676478b59c827de1761d, type: 3}
   footStepRate: 0.37
   footStepThresHold: 0.5
+  jumpForce: 70
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 512
   moveSpeed: 4.5
   cameraContainer: {fileID: 529565793}
   minXLook: -80
@@ -684,7 +688,19 @@ MonoBehaviour:
     m_ActionId: d3ca7238-3531-4692-8da1-d1b6b66605e4
     m_ActionName: Main/AltAttack
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1968256184}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnJumpInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: d2f2a4aa-cab4-4592-a98a-6776ced86263
     m_ActionName: Main/Jump[/Keyboard/space]
   - m_PersistentCalls:

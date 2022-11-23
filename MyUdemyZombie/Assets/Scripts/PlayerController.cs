@@ -11,6 +11,11 @@ public class PlayerController : MonoBehaviour
     public float footStepRate, footStepThresHold;
     private float lastStepTime;
 
+    [Header("Jumping")]
+    public float jumpForce;
+    public LayerMask groundLayer;
+
+
     [Header("Movement")]
     public float moveSpeed = 6f; // how fast our player should move
                                  // 플레이어가 얼마나 빨리 움직여야 하는지. 이동속도
@@ -88,7 +93,7 @@ public class PlayerController : MonoBehaviour
         // Time.time은 단순히 프로젝트 재생이 시작된 이후 경과된 초 수와 동일한 숫자 값을 제공합니다.
 
         // check if rigidbody speed bigger than our footstepthreshhold
-        if (moveDirection.magnitude > footStepThresHold)
+        if (moveDirection.magnitude > footStepThresHold && IsGrounded())
         {
             if (Time.time - lastStepTime > footStepRate)
             {
@@ -148,4 +153,57 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    public void OnJumpInput(InputAction.CallbackContext context)
+    {
+        // is it the first frame that we held the button down
+        // down button을 눌렀는지 확인한다.
+        if (context.phase == InputActionPhase.Started)
+        {
+            // add force toward upside
+            // 위로 힘을 가한다.
+            if(IsGrounded())
+            {
+                myRig.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            }
+        }
+    }
+
+    bool IsGrounded()
+    {
+        Ray[] rays = new Ray[4]
+        {
+            new Ray(transform.position + (transform.forward* 0.2f), Vector3.down),
+            new Ray(transform.position + (-transform.forward* 0.2f), Vector3.down),
+            new Ray(transform.position + (transform.right* 0.2f), Vector3.down),
+            new Ray(transform.position + (-transform.right* 0.2f), Vector3.down)
+        };
+
+        // Statement 1 sets a variable before the loop starts (int i = 0).
+        // Statement 1 루프가 시작되기 전에 변수를 설정합니다. (int i = 0).
+
+        // Statement 2 defines the condition for the loop to run.If the condition is true, the loop will start over again, if it is false, the loop will end.
+        // Statement 2 루프가 실행되는 조건을 정의합니다.
+        // 조건이 참이면 반복문을 다시 시작하고 거짓이면 반복문을 종료합니다.
+
+        // Statement 3 increases a value(i++) each time the code block in the loop has been executed.
+        // Statement 3 루프의 코드 블록이 실행될 때마다 value(i++)가 증가합니다.
+        for (int i = 0; i < rays.Length; i++)
+        {
+            if (Physics.Raycast(rays[i], 0.1f, groundLayer))
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(transform.position + (transform.forward * 0.2f), Vector3.down);
+        Gizmos.DrawRay(transform.position + (-transform.forward * 0.2f), Vector3.down);
+        Gizmos.DrawRay(transform.position + (transform.right * 0.2f), Vector3.down);
+        Gizmos.DrawRay(transform.position + (-transform.right * 0.2f), Vector3.down);
+    }
 }
