@@ -5,6 +5,11 @@ using UnityEngine.InputSystem; // InputSystem 에 접근하게 해주는 유니티 이벤트시
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Movement Sound")]
+    private AudioSource audioS;
+    public AudioClip[] stepSounds;
+    public float footStepRate, footStepThresHold;
+    private float lastStepTime;
 
     [Header("Movement")]
     public float moveSpeed = 6f; // how fast our player should move
@@ -29,6 +34,7 @@ public class PlayerController : MonoBehaviour
     {
         // 나의 Rigidbody를 myRig 에 할당합니다.
         myRig = GetComponent<Rigidbody>();
+        audioS = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -73,6 +79,24 @@ public class PlayerController : MonoBehaviour
         moveDirection *= moveSpeed;
         moveDirection.y = myRig.velocity.y;
         myRig.velocity = moveDirection;
+
+        // The velocity vector of the rigidbody. It represents the rate of change of Rigidbody position.
+        // rigidbody의 속도 벡터. Rigidbody 위치의 변화율을 나타냅니다.
+
+        // Time.time simply gives you a numeric value which is equal to
+        // the number of seconds which have elapsed since the project started playing.
+        // Time.time은 단순히 프로젝트 재생이 시작된 이후 경과된 초 수와 동일한 숫자 값을 제공합니다.
+
+        // check if rigidbody speed bigger than our footstepthreshhold
+        if (moveDirection.magnitude > footStepThresHold)
+        {
+            if (Time.time - lastStepTime > footStepRate)
+            {
+                lastStepTime = Time.time;
+                audioS.PlayOneShot(stepSounds[Random.Range(0, stepSounds.Length)]);
+            }
+        }
+
 
     }
 
