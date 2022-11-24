@@ -23666,7 +23666,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5022597497265397105}
+      - m_Target: {fileID: 5022597497265397120}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: OnMovementInput
         m_Mode: 0
@@ -23690,7 +23690,7 @@ MonoBehaviour:
     m_ActionName: Main/AltAttack
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5022597497265397105}
+      - m_Target: {fileID: 5022597497265397120}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: OnJumpInput
         m_Mode: 0
@@ -23718,7 +23718,7 @@ MonoBehaviour:
     m_ActionName: Main/interact Action[/Keyboard/e]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5022597497265397105}
+      - m_Target: {fileID: 5022597497265397120}
         m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
         m_MethodName: OnLookInput
         m_Mode: 0
@@ -23737,32 +23737,6 @@ MonoBehaviour:
   m_DefaultActionMap: Main
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &5022597497265397105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5022597497265397117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92a1f60ee4215ac44a32ebd1d9b0107c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  stepSounds:
-  - {fileID: 8300000, guid: 23b183f4fa0e49d4a8353cd88ea15f34, type: 3}
-  - {fileID: 8300000, guid: f6cdeac1b216676478b59c827de1761d, type: 3}
-  footStepRate: 0.37
-  footStepThresHold: 0.5
-  jumpForce: 70
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 567
-  moveSpeed: 8.04
-  cameraContainer: {fileID: 5022597498712400296}
-  minXLook: -80
-  maxXLook: 80
-  looksensitivity: 0.15
 --- !u!114 &5022597497265397106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23934,7 +23908,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5022597497265397116}
-  - component: {fileID: 5022597497265397105}
+  - component: {fileID: 5022597497265397120}
   - component: {fileID: 5022597497265397106}
   - component: {fileID: 5022597497265397118}
   - component: {fileID: 5022597497265397119}
@@ -23977,6 +23951,32 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &5022597497265397120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5022597497265397117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a14a097194c1f44bdedb18adda30af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stepSounds:
+  - {fileID: 8300000, guid: 23b183f4fa0e49d4a8353cd88ea15f34, type: 3}
+  - {fileID: 8300000, guid: f6cdeac1b216676478b59c827de1761d, type: 3}
+  footStepRate: 0.37
+  footStepThresHold: 0.5
+  jumpForce: 70
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 567
+  moveSpeed: 8.04
+  cameraContainer: {fileID: 5022597498712400296}
+  minXLook: -80
+  maxXLook: 80
+  looksensitivity: 0.15
 --- !u!1 &5022597498275693752
 GameObject:
   m_ObjectHideFlags: 0

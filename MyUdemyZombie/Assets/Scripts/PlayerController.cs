@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed = 6f; // how fast our player should move
                                  // 플레이어가 얼마나 빨리 움직여야 하는지. 이동속도
-    private Vector2 currentMovementInput; 
+    private Vector2 currentMovementInput;
 
     [Header("Camera Look")]
     public Transform cameraContainer; // acess to transform value of our camera container
@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
                                   // 빠르게 둘러볼 수 있는, 민감도 조절
     private Vector2 mouseDelta; // player 가 이동하거나 클릭할 때 마우스커서가 보입니다. 그래서
                                 // private 로 변경하여 커서를 잠급니다.
-    // public Vector2 mouseDelta;
+                                // public Vector2 mouseDelta;
     private Rigidbody myRig; // Rigidbody 에 접근하게 해줍니다.
 
     private void Awake()
@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
     {
         // store our movement value to move direction
         // 이동 값을 저장하여 플레이어가 바라보는 방향으로 이동합니다.
-        Vector3 moveDirection = transform.forward * currentMovementInput.y + 
+        Vector3 moveDirection = transform.forward * currentMovementInput.y +
                                 transform.right * currentMovementInput.x;
 
         // => moveDirection = moveDirection * moveSpeed;
@@ -161,7 +161,7 @@ public class PlayerController : MonoBehaviour
         {
             // add force toward upside
             // 위로 힘을 가한다.
-            if(IsGrounded())
+            if (IsGrounded())
             {
                 myRig.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             }
