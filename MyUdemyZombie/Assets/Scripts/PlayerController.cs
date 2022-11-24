@@ -172,10 +172,11 @@ public class PlayerController : MonoBehaviour
     {
         Ray[] rays = new Ray[4]
         {
-            new Ray(transform.position + (transform.forward* 0.2f), Vector3.down),
-            new Ray(transform.position + (-transform.forward* 0.2f), Vector3.down),
-            new Ray(transform.position + (transform.right* 0.2f), Vector3.down),
-            new Ray(transform.position + (-transform.right* 0.2f), Vector3.down)
+            // ±¤¼±ÀÇ Ç¥Çö.
+            new Ray(transform.position + (transform.forward* 0.2f) + (Vector3.up * 0.02f), Vector3.down),
+            new Ray(transform.position + (-transform.forward* 0.2f) + (Vector3.up * 0.02f), Vector3.down),
+            new Ray(transform.position + (transform.right* 0.2f) + (Vector3.up * 0.02f), Vector3.down),
+            new Ray(transform.position + (-transform.right* 0.2f) + (Vector3.up * 0.02f), Vector3.down)
         };
 
         // Statement 1 sets a variable before the loop starts (int i = 0).

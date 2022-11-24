@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638046883603363777
-    m_Hash: 4006002831
+      ticks: 638048579545321233
+    m_Hash: 206320682
   m_LockFileStatus:
     m_FilePath: C:/Users/USER/UnityProject/GitHub/MyUdemyZombie/MyUdemyZombie/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638046883603408115
-    m_Hash: 1482824573
+      ticks: 638048579545321233
+    m_Hash: 1360778194
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
