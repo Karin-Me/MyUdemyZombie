@@ -360,6 +360,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/IInterface/IDamageable.cs"
 "Assets/Scripts/Items/ItemData.cs"
+"Assets/Scripts/Items/ItemObject.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/PlayerNeeds.cs"
 "Assets/Scripts/TestEnemy.cs"
