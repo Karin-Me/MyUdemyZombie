@@ -366,6 +366,7 @@
 "Assets/Scripts/PlayerNeeds.cs"
 "Assets/Scripts/TestEnemy.cs"
 "Assets/Scripts/UI/DamageIndicator.cs"
+"Assets/Scripts/UI/ItemSlopUI.cs"
 -langversion:9.0
 
 /deterministic

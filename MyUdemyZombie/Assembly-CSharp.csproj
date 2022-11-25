@@ -58,12 +58,13 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Items\ItemData.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\InteractionMager.cs" />
     <Compile Include="Assets\Scripts\IInterface\IDamageable.cs" />
     <Compile Include="Assets\Scripts\UI\DamageIndicator.cs" />
     <Compile Include="Assets\Scripts\Items\ItemObject.cs" />
     <Compile Include="Assets\Scripts\PlayerNeeds.cs" />
     <Compile Include="Assets\Scripts\TestEnemy.cs" />
-    <Compile Include="Assets\Scripts\InteractionMager.cs" />
+    <Compile Include="Assets\Scripts\UI\ItemSlopUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
