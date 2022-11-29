@@ -31,13 +31,12 @@ public class ItemSlotUI : MonoBehaviour
         icon.sprite = slot.item.icon;
 
         // ternary statement // »ïÇ×¹®
-        quantityText.text = slot.quantity > 1 ? slot.quantity.ToString() : string.Empty;
+        //quantityText.text = slot.quantity > 1 ? slot.quantity.ToString() : string.Empty;
 
         if (slot.quantity > 1)
         {
             quantityText.text = slot.quantity.ToString();
-        }
-        else
+        }else
         {
             quantityText.text = string.Empty;
         }
@@ -57,6 +56,6 @@ public class ItemSlotUI : MonoBehaviour
 
     public void OnbuttonClick()
     {
-
+        Inventory.instance.SelectItem(index);
     }
 }

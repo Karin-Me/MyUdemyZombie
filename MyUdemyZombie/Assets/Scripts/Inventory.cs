@@ -18,8 +18,8 @@ public class Inventory : MonoBehaviour
     private int selectedItemIndex;      // getting the index number of that item
     public TextMeshProUGUI selectedItemName;
     public TextMeshProUGUI selectedItemdescription;
-    public TextMeshProUGUI selectedItemStatName;
-    public TextMeshProUGUI selectedItemStatValue;
+    public TextMeshProUGUI selectedItemAStatName, selectedItemBStatName;
+    public TextMeshProUGUI selectedItemAStatValue, selectedItemBStatValue; 
     public GameObject useButton;
     public GameObject dropButton;
     public GameObject equipButton;
@@ -55,11 +55,29 @@ public class Inventory : MonoBehaviour
             uiSlots[x].index = x;
             uiSlots[x].ClearSlot();
         }
+
+        ClearSelectedItemWindow();
+    }
+
+    public void OnInventoryButton(InputAction.CallbackContext context)
+    {
+        Toggle();
     }
 
     public void Toggle()
     {
-
+        if (inventoryWindow.activeInHierarchy)
+        {
+            inventoryWindow.SetActive(false);
+            onCloseInventory.Invoke();
+            controller.ToggleCurcor(false);
+        }else
+        {
+            inventoryWindow.SetActive(true);
+            onOpenInventory.Invoke();
+            ClearSelectedItemWindow();
+            controller.ToggleCurcor(true);
+        }
     }
 
     public bool IsOpen()
@@ -118,8 +136,7 @@ public class Inventory : MonoBehaviour
             {
                 // set the item
                 uiSlots[x].Set(slots[x]);
-            }
-            else    // if there is not item inside
+            }else    // if there is not item inside
             {
                 // clear that slot
                 uiSlots[x].ClearSlot();
@@ -174,11 +191,16 @@ public class Inventory : MonoBehaviour
         // if we dont have any item in inventory slot dont do anything
         // inventory slot 에 아이템이 없으면 아무 작업도 하지 않습니다.
         if (slots[index].item == null)
+        {
             return;
+        }
+            
+
         // selected item is equal to index of that slot
         // selecteditem 은 해당 selectedItemIndex 의 index 와 같습니다.
         selectedItem = slots[index];
         selectedItemIndex = index;
+
         // set the name and description of our item
         // item name 과 description 을 설정합니다.
         selectedItemName.text = selectedItem.item.ItemName;
@@ -207,12 +229,25 @@ public class Inventory : MonoBehaviour
 
     void ClearSelectedItemWindow()
     {
+        // clear the text elements
+        selectedItem = null;
+        selectedItemName.text = string.Empty;
+        selectedItemdescription.text = string.Empty;
+        selectedItemAStatName.text = string.Empty;
+        selectedItemBStatName.text = string.Empty;
+        selectedItemAStatValue.text = string.Empty;
+        selectedItemBStatValue.text = string.Empty;
 
+        // disable all buttons 모든 버튼 비활성화
+        dropButton.SetActive(false);
+        useButton.SetActive(false);
+        unequipButton.SetActive(false);
+        equipButton.SetActive(false);
     }
 
     public void OnUseButton()
     {
-
+        
     }
 
     public void OnEquipButton()
@@ -227,7 +262,8 @@ public class Inventory : MonoBehaviour
 
     public void OnDropButton()
     {
-
+        ThrowItem(selectedItem.item);
+        RemoveSelectedItem();
     }
 
     private void UnEquip(int index)
@@ -237,7 +273,20 @@ public class Inventory : MonoBehaviour
 
     void RemoveSelectedItem()
     {
+        selectedItem.quantity--;
 
+        if (selectedItem.quantity == 0)
+        {
+            if (uiSlots[selectedItemIndex].equipped == true)
+            {
+                UnEquip(selectedItemIndex);
+            }
+                selectedItem.item = null;
+                ClearSelectedItemWindow();
+            
+
+            UpdateUI();
+        }
     }
 
     public void RemoveItem(ItemData item)

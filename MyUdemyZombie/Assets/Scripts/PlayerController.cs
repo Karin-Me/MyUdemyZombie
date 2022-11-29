@@ -34,7 +34,8 @@ public class PlayerController : MonoBehaviour
                                 // private 로 변경하여 커서를 잠급니다.
                                 // public Vector2 mouseDelta;
     private Rigidbody myRig; // Rigidbody 에 접근하게 해줍니다.
-
+   [HideInInspector]
+    public bool canLook = true;
     private void Awake()
     {
         // 나의 Rigidbody를 myRig 에 할당합니다.
@@ -55,9 +56,13 @@ public class PlayerController : MonoBehaviour
     // LateUpdate is called after all Update funtions have been called
     private void LateUpdate()
     {
-        // we want to rotate camera after player has moved
-        // 플레이어가 이동할 때 카메라 회전하는 메서드
-        CameraLook();
+        if (canLook == true)
+        {
+            // we want to rotate camera after player has moved
+            // 플레이어가 이동할 때 카메라 회전하는 메서드
+            CameraLook();
+        }
+        
     }
 
     // FixedUpdate will be called 50 time per second (around 0.02 second)
@@ -206,5 +211,13 @@ public class PlayerController : MonoBehaviour
         Gizmos.DrawRay(transform.position + (-transform.forward * 0.2f), Vector3.down);
         Gizmos.DrawRay(transform.position + (transform.right * 0.2f), Vector3.down);
         Gizmos.DrawRay(transform.position + (-transform.right * 0.2f), Vector3.down);
+    }
+
+    public void ToggleCurcor(bool toggle)
+    {
+        // check if toggle is true then lockstate is none lockstate is locked  
+        Cursor.lockState = toggle ? CursorLockMode.None : CursorLockMode.Locked;
+        // canLook is become opposite of toggle
+        canLook = !toggle;
     }
 }

@@ -142,7 +142,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3545777559945011351}
-        m_TargetAssemblyTypeName: ItemSlopUI, Assembly-CSharp
+        m_TargetAssemblyTypeName: ItemSlotUI, Assembly-CSharp
         m_MethodName: OnbuttonClick
         m_Mode: 1
         m_Arguments:
