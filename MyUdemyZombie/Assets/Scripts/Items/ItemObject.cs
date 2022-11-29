@@ -15,7 +15,9 @@ public class ItemObject : MonoBehaviour, IInteractable
 
     public void OnInteract()
     {
+        Inventory.instance.AddItem(item);
         // destroy game object after interacting with it
+        // 게임 오브젝트와 상호작용한 후 파괴시키는 메서드입니다.
         Destroy(gameObject);
     }
 }

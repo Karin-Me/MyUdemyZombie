@@ -16,6 +16,6 @@ MonoBehaviour:
   itemDescribtion: This can remove your hunger
   type: 1
   icon: {fileID: 21300000, guid: 34e71aa10eaa6594d8f958e9ee933c95, type: 3}
-  dropPrefab: {fileID: 0}
+  dropPrefab: {fileID: 6104857742648630737, guid: 4c098d95f1568a0488ef31f4206993c5, type: 3}
   canStack: 1
   maxStackAmount: 10

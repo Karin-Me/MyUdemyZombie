@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 34535f2c355be654f9a034242b13f046
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Penapik
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 53aa61a431579064497706a7c205cba7, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

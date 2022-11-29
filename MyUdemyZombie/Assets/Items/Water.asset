@@ -16,6 +16,6 @@ MonoBehaviour:
   itemDescribtion: Remove your thirst
   type: 1
   icon: {fileID: 21300000, guid: 3c8010c4a8032ac4597ff2d9310163d3, type: 3}
-  dropPrefab: {fileID: 0}
+  dropPrefab: {fileID: 8541225867060040250, guid: 20fc4165cc4007c41957b2e74349eb13, type: 3}
   canStack: 1
   maxStackAmount: 10

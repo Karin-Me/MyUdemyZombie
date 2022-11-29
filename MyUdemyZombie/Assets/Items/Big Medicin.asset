@@ -16,6 +16,6 @@ MonoBehaviour:
   itemDescribtion: This item is going to heal your large wounds
   type: 1
   icon: {fileID: 21300000, guid: 228f8d4ac11034540861ec3d95120898, type: 3}
-  dropPrefab: {fileID: 0}
+  dropPrefab: {fileID: 5735600042962663471, guid: 97a7a3e911991e94d9f4253a9fe8e06d, type: 3}
   canStack: 1
   maxStackAmount: 20

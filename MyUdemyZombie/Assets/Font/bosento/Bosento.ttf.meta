@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 7cb994287bda07d498ba07911994593f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - 'Bosento '
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 3200112c697adae4fbbca76239fd0f77, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

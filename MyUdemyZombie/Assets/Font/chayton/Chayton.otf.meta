@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 67c02a03067bade438c894539653b23f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Chayton
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 417dd511d2f8ff747a85ed415717d232, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
