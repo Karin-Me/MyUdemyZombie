@@ -45,7 +45,7 @@ public class PlayerNeeds : MonoBehaviour, IDamageable
             thirst.Subtract(noThirstHPDecay * Time.deltaTime);
         }
         // check if player health reached to zero then call Did funtion
-        // 플레이어의 체력이 0에 도달했는지 확인한 다음 Did 함수를 호출합니다.
+        // 플레이어의 체력이 0에 도달했는지 확인한 다음 Die 함수를 호출합니다.
         if (health.currentValue == 0.0f)
         {
             Die();
@@ -65,12 +65,12 @@ public class PlayerNeeds : MonoBehaviour, IDamageable
         health.Add(amount);
     }
 
-    public void Hunger(float amount)
+    public void Eat(float amount)
     {
         hunger.Add(amount);
     }
 
-    public void Thirst(float amount)
+    public void Drink(float amount)
     {
         thirst.Add(amount);
     }
@@ -123,5 +123,4 @@ public class Need
     }
 
 }
-
 

@@ -10,6 +10,13 @@ public enum ItemType
     Resource    // 자원들.
 }
 
+public enum ConsumableType  // 소모품 타입
+{
+    Hunger,
+    Thirst,
+    Health
+}
+
 
 // A ScriptableObject is a data container that you can use to save large amounts of data, 
 // independent of class instances. One of the main use cases for ScriptableObjects is to 
@@ -19,7 +26,8 @@ public enum ItemType
 // 많은 양의 data 를 저장하는 데 사용할 수 있는 data container 이며,
 // class instances 와 독립적입니다.
 // ScriptableObjects 의 주요 사용 사례 중 하나는
-// values, 값들의 copy 를 피함으로써 Project's 의 Reduce memory usage. 메모리 사용량을 줄입니다.
+// values(여러 값, 여러 오브젝트들)의 copy 를 피함으로써
+// Project's 의 [Reduce memory usage], 메모리 사용량을 줄입니다.
 
 [CreateAssetMenu(fileName = "Item", menuName = "New Item")]
 public class ItemData : ScriptableObject
@@ -35,4 +43,15 @@ public class ItemData : ScriptableObject
     public bool canStack;
     public int maxStackAmount;
 
-}   
+    [Header("Consumable")]
+    public ItemDataConsumable[] consumable;
+}
+
+[System.Serializable]
+public class ItemDataConsumable
+{
+    public ConsumableType type;
+    public float value;
+
+
+}

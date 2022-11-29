@@ -18,13 +18,14 @@ public class Inventory : MonoBehaviour
     private int selectedItemIndex;      // getting the index number of that item
     public TextMeshProUGUI selectedItemName;
     public TextMeshProUGUI selectedItemdescription;
-    public TextMeshProUGUI selectedItemAStatName, selectedItemBStatName;
-    public TextMeshProUGUI selectedItemAStatValue, selectedItemBStatValue; 
+    public TextMeshProUGUI selectedItemStatName;
+    public TextMeshProUGUI selectedItemStatValue; 
     public GameObject useButton;
     public GameObject dropButton;
     public GameObject equipButton;
     public GameObject unequipButton;
     private PlayerController controller;
+    private PlayerNeeds needs;
     private int curEquipIndex;
     [Header("Events")]
     public UnityEvent onOpenInventory;
@@ -37,6 +38,7 @@ public class Inventory : MonoBehaviour
     {
         instance = this;
         controller = GetComponent<PlayerController>();
+        needs = GetComponent<PlayerNeeds>();
     }
 
     private void Start()
@@ -191,9 +193,8 @@ public class Inventory : MonoBehaviour
         // if we dont have any item in inventory slot dont do anything
         // inventory slot 에 아이템이 없으면 아무 작업도 하지 않습니다.
         if (slots[index].item == null)
-        {
             return;
-        }
+        
             
 
         // selected item is equal to index of that slot
@@ -207,6 +208,18 @@ public class Inventory : MonoBehaviour
         selectedItemdescription.text = selectedItem.item.itemDescribtion;
 
         // set stat value and stat name
+        selectedItemStatName.text = string.Empty;
+        selectedItemStatValue.text = string.Empty;
+
+
+        for (int x = 0; x < selectedItem.item.consumable.Length; x++)
+        {
+            selectedItemStatName.text += selectedItem.item.consumable[x].type.ToString() + "\n";
+            selectedItemStatValue.text += selectedItem.item.consumable[x].value.ToString() + "\n";
+
+        }
+
+
 
         // activate use button if selected item is consumable
         // 선택한 item 이 consumable(소모품)일 경우 button 을 활성화합니다.
@@ -233,11 +246,9 @@ public class Inventory : MonoBehaviour
         selectedItem = null;
         selectedItemName.text = string.Empty;
         selectedItemdescription.text = string.Empty;
-        selectedItemAStatName.text = string.Empty;
-        selectedItemBStatName.text = string.Empty;
-        selectedItemAStatValue.text = string.Empty;
-        selectedItemBStatValue.text = string.Empty;
-
+        selectedItemStatName.text = string.Empty;        
+        selectedItemStatValue.text = string.Empty;
+        
         // disable all buttons 모든 버튼 비활성화
         dropButton.SetActive(false);
         useButton.SetActive(false);
@@ -247,7 +258,23 @@ public class Inventory : MonoBehaviour
 
     public void OnUseButton()
     {
-        
+        if (selectedItem.item.type == ItemType.Consumable)
+        {
+            for (int x = 0; x < selectedItem.item.consumable.Length; x++)
+            {
+                switch (selectedItem.item.consumable[x].type)
+                {
+                    case ConsumableType.Health: needs.Heal(selectedItem.item.consumable[x].value);
+                    break;
+                    case ConsumableType.Hunger: needs.Eat(selectedItem.item.consumable[x].value);
+                    break;
+                    case ConsumableType.Thirst: needs.Drink(selectedItem.item.consumable[x].value);
+                    break;
+                }
+            }
+        }
+
+        RemoveSelectedItem();
     }
 
     public void OnEquipButton()
