@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2021.3/staging' branch; Version is '2021.3.6f1 (7da38d85baf6) revision 8233869'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ko' Physical Memory: 16266 MB
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ko' Physical Memory: 16163 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,13 +11,13 @@ C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Unity.exe
 -name
 AssetImportWorker2
 -projectPath
-D:/Unity/GitHub/MyUdemyZombie/MyUdemyZombie
+C:/Users/USER/UnityProject/GitHub/MyUdemyZombie/MyUdemyZombie
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-8135
-Successfully changed project path to: D:/Unity/GitHub/MyUdemyZombie/MyUdemyZombie
-D:/Unity/GitHub/MyUdemyZombie/MyUdemyZombie
+6822
+Successfully changed project path to: C:/Users/USER/UnityProject/GitHub/MyUdemyZombie/MyUdemyZombie
+C:/Users/USER/UnityProject/GitHub/MyUdemyZombie/MyUdemyZombie
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -47,111 +47,111 @@ D:/Unity/GitHub/MyUdemyZombie/MyUdemyZombie
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 120.55 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 86.68 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.6f1 (7da38d85baf6)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path D:/Unity/GitHub/MyUdemyZombie/MyUdemyZombie/Assets
+[Subsystems] Discovering subsystems at path C:/Users/USER/UnityProject/GitHub/MyUdemyZombie/MyUdemyZombie/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce GTX 1060 3GB (ID=0x1c02)
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
     Vendor:   NVIDIA
-    VRAM:     2988 MB
+    VRAM:     3990 MB
     Driver:   30.0.15.1215
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56240
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.022179 seconds.
+Registered in 0.003376 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 114.25 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 80.95 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.832 seconds
+- Completed reload, in  0.509 seconds
 Domain Reload Profiling:
-	ReloadAssembly (832ms)
-		BeginReloadAssembly (109ms)
+	ReloadAssembly (510ms)
+		BeginReloadAssembly (51ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (569ms)
-			LoadAssemblies (106ms)
+		EndReloadAssembly (382ms)
+			LoadAssemblies (51ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (129ms)
+			SetupTypeCache (86ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (347ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (232ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (73ms)
+				InitializePlatformSupportModulesInManaged (42ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (114ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (107ms)
-				ProcessInitializeOnLoadMethodAttributes (51ms)
+				RefreshPlugins (81ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (74ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007314 seconds.
+Registered in 0.002883 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image D:\Unity\GitHub\MyUdemyZombie\MyUdemyZombie\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image D:\Unity\GitHub\MyUdemyZombie\MyUdemyZombie\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\USER\UnityProject\GitHub\MyUdemyZombie\MyUdemyZombie\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\USER\UnityProject\GitHub\MyUdemyZombie\MyUdemyZombie\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 115.85 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 78.54 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.696 seconds
+- Completed reload, in  1.060 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2697ms)
-		BeginReloadAssembly (1350ms)
+	ReloadAssembly (1061ms)
+		BeginReloadAssembly (188ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1224ms)
-		EndReloadAssembly (1205ms)
-			LoadAssemblies (125ms)
+			CreateAndSetChildDomain (124ms)
+		EndReloadAssembly (785ms)
+			LoadAssemblies (66ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (340ms)
+			SetupTypeCache (225ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (61ms)
-			SetupLoadedEditorAssemblies (651ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (417ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (22ms)
+				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (116ms)
-				BeforeProcessingInitializeOnLoad (123ms)
-				ProcessInitializeOnLoadAttributes (345ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
-				AfterProcessingInitializeOnLoad (19ms)
+				RefreshPlugins (79ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (234ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (3ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.25 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4059 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 55 unused Assets / (1.4 MB). Loaded Objects now: 4512.
-Memory consumption went from 230.4 MB to 229.0 MB.
-Total: 3.737500 ms (FindLiveObjects: 0.364300 ms CreateObjectMapping: 0.335800 ms MarkObjects: 2.733200 ms  DeleteObjects: 0.303300 ms)
+Unloading 4061 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 55 unused Assets / (1.4 MB). Loaded Objects now: 4514.
+Memory consumption went from 230.6 MB to 229.2 MB.
+Total: 2.836400 ms (FindLiveObjects: 0.294700 ms CreateObjectMapping: 0.109800 ms MarkObjects: 2.191200 ms  DeleteObjects: 0.239800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -165,59 +165,13 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 788082.422352 seconds.
-  path: Assets/Survival Melee Weapons/Survival Melee Weapon 2/Texture/Survival Melee Weapon 2  Blade AlbedoTransparency.png
-  artifactKey: Guid(f5c4bfa0fa01bc04484de89cb139918a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Survival Melee Weapons/Survival Melee Weapon 2/Texture/Survival Melee Weapon 2  Blade AlbedoTransparency.png using Guid(f5c4bfa0fa01bc04484de89cb139918a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebe8d7e2db44339464cffb43942cb380') in 0.121171 seconds 
+  Time since last request: 29127.485052 seconds.
+  path: Assets/Prefabs/Weapons/Equip Axe.prefab
+  artifactKey: Guid(4900d120fc07a6e45a886c344dfaa0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Weapons/Equip Axe.prefab using Guid(4900d120fc07a6e45a886c344dfaa0bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '218122109bc87ecbc9d01c74d4ec7201') in 0.128076 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.631851 seconds.
-  path: Assets/Survival Melee Weapons/Survival Melee Weapon 3/Materials/Survival Melee Weapon 3.mat
-  artifactKey: Guid(83eb5c7467c820544998f88ae9073662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Survival Melee Weapons/Survival Melee Weapon 3/Materials/Survival Melee Weapon 3.mat using Guid(83eb5c7467c820544998f88ae9073662) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57743d49583746cd49d7c86bb4f05a2f') in 0.095102 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.722374 seconds.
-  path: Assets/Survival Melee Weapons/Survival Melee Weapon 3/Model/Survival Melee Weapon 3.fbx
-  artifactKey: Guid(580dc0a75052e7248acf453b33b4fc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Survival Melee Weapons/Survival Melee Weapon 3/Model/Survival Melee Weapon 3.fbx using Guid(580dc0a75052e7248acf453b33b4fc56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64ad7d9ff363650ae3eaac8fc460042b') in 0.072880 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.288078 seconds.
-  path: Assets/Survival Melee Weapons/Survival Melee Weapon 3/Prefab/Survival Melee Weapon 3.prefab
-  artifactKey: Guid(217ee16bc0a693249adf65b7044f9d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Survival Melee Weapons/Survival Melee Weapon 3/Prefab/Survival Melee Weapon 3.prefab using Guid(217ee16bc0a693249adf65b7044f9d41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '950aa3ef7cc726a5ea1fb40acdf28fbf') in 0.030859 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.657531 seconds.
-  path: Assets/Survival Melee Weapons/Survival Melee Weapon 3/Texture/Survival Melee Weapon 3 AlbedoTransparency.png
-  artifactKey: Guid(9cad7aae7e4e7a1458e2db4259568d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Survival Melee Weapons/Survival Melee Weapon 3/Texture/Survival Melee Weapon 3 AlbedoTransparency.png using Guid(9cad7aae7e4e7a1458e2db4259568d6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dc1567e5df4d4d2923e9ccf37c9295b') in 0.021983 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.953596 seconds.
-  path: Assets/Survival Melee Weapons/Survival Melee Weapon 4/Materials/Survival Melee Weapon 4.mat
-  artifactKey: Guid(3909847f8a7b6e6449574b2f7191ff00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Survival Melee Weapons/Survival Melee Weapon 4/Materials/Survival Melee Weapon 4.mat using Guid(3909847f8a7b6e6449574b2f7191ff00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c703221c599a1ecdc2fa6bec387613c') in 0.017858 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.527372 seconds.
-  path: Assets/Survival Melee Weapons/Survival Melee Weapon 4/Model/Survival Melee Weapon 4.fbx
-  artifactKey: Guid(77d3828a3ce56974990375be995fc9cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Survival Melee Weapons/Survival Melee Weapon 4/Model/Survival Melee Weapon 4.fbx using Guid(77d3828a3ce56974990375be995fc9cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bba7051d257141d057954df68aa96622') in 0.014918 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.930279 seconds.
-  path: Assets/Survival Melee Weapons/Survival Melee Weapon 4/Prefab/Survival Melee Weapon 4.prefab
-  artifactKey: Guid(b3e7c371955b9d04a9a79256bb008328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Survival Melee Weapons/Survival Melee Weapon 4/Prefab/Survival Melee Weapon 4.prefab using Guid(b3e7c371955b9d04a9a79256bb008328) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e6c33b78346aa0c3805b60e7c5d50ff') in 0.016669 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.545288 seconds.
-  path: Assets/Survival Melee Weapons/Survival Melee Weapon 4/Texture/Survival Melee Weapon 4 AlbedoTransparency.png
-  artifactKey: Guid(b4c429016d3ee6f4d9f83d5ef8ab7e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Survival Melee Weapons/Survival Melee Weapon 4/Texture/Survival Melee Weapon 4 AlbedoTransparency.png using Guid(b4c429016d3ee6f4d9f83d5ef8ab7e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddfbd83c3d73535dc64d74f8c6899174') in 0.016341 seconds 
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+  Time since last request: 296.424973 seconds.
+  path: Assets/Items/Bat_Weapon.asset
+  artifactKey: Guid(53d45d0f10d9f9e418f6fd6a1ce28ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/Bat_Weapon.asset using Guid(53d45d0f10d9f9e418f6fd6a1ce28ddf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab48c80024b333e32e814b77824f19dd') in 0.004214 seconds 

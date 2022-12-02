@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3964362208826236433}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Survival Melee Weapon 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   - component: {fileID: 8664442519281345296}
   - component: {fileID: 7449159183884959470}
   - component: {fileID: 8988483847371929675}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Blade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 5386300111652335765}
   - component: {fileID: 841421205500994877}
   - component: {fileID: 7570526150723979072}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5690880750586238408}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Equip Axe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
