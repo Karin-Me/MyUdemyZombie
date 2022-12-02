@@ -56,8 +56,10 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\EquipManager.cs" />
     <Compile Include="Assets\Scripts\Items\ItemData.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\Equip.cs" />
     <Compile Include="Assets\Scripts\InteractionMager.cs" />
     <Compile Include="Assets\Scripts\IInterface\IDamageable.cs" />
     <Compile Include="Assets\Scripts\UI\DamageIndicator.cs" />
@@ -66,8 +68,7 @@
     <Compile Include="Assets\Scripts\PlayerNeeds.cs" />
     <Compile Include="Assets\Scripts\UI\ItemSlotUI.cs" />
     <Compile Include="Assets\Scripts\TestEnemy.cs" />
-    <Compile Include="Assets\Scripts\EquipManager.cs" />
-    <Compile Include="Assets\Scripts\Equip.cs" />
+    <Compile Include="Assets\Scripts\EquipTools.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
