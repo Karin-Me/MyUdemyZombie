@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7934926697448552804}
   m_LocalRotation: {x: -0.04418953, y: 0.04143589, z: -0.046815697, w: 0.997065}
-  m_LocalPosition: {x: 0.24075958, y: -0.420133, z: 0.46662432}
+  m_LocalPosition: {x: 0.293, y: -0.344, z: 0.487}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -93,6 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7934926697896539616}
   - component: {fileID: -8899627455705731115}
+  - component: {fileID: 1250489165}
   m_Layer: 10
   m_Name: Equip Bat
   m_TagString: Untagged
@@ -128,3 +129,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d191d32418690c4e903e6c4a7874fce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackRate: 0
+  attackDistance: 0
+  DoesGatherResources: 0
+  doesdealDamage: 0
+  damage: 0
+--- !u!95 &1250489165
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7934926697896539617}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f175a0c894017514c8c59def915dab5c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

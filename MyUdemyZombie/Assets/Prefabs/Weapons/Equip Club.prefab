@@ -45,6 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d191d32418690c4e903e6c4a7874fce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attackRate: 0
+  attackDistance: 0
+  DoesGatherResources: 0
+  doesdealDamage: 0
+  damage: 0
 --- !u!1 &3450985970949827142
 GameObject:
   m_ObjectHideFlags: 0
@@ -71,8 +76,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3450985970949827142}
   m_LocalRotation: {x: -0.04418951, y: 0.041435897, z: -0.0468156, w: 0.99706507}
-  m_LocalPosition: {x: 0.24075958, y: -0.420133, z: 0.46662432}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.337, y: -0.455, z: 0.537}
+  m_LocalScale: {x: 1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3450985969775870683}

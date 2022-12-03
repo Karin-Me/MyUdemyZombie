@@ -21,7 +21,7 @@ public class EquipManager : MonoBehaviour
     {
         if (context.phase == InputActionPhase.Performed && currentEquip != null && player.canLook == true)
         {
-
+            currentEquip.OnAttackInput();
         }
     }
 
@@ -29,7 +29,7 @@ public class EquipManager : MonoBehaviour
     {
         if (context.phase == InputActionPhase.Performed && currentEquip != null && player.canLook == true)
         {
-
+            currentEquip.OnAltAttackInput();
         }
     }
 

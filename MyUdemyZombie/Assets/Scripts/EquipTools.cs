@@ -34,6 +34,6 @@ public class EquipTools : Equip
 
     public void OnHit()
     {
-
+        Debug.Log("Hit");
     }
 }
