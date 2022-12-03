@@ -16,7 +16,7 @@ MonoBehaviour:
   itemDescribtion: This item is Inflicts critical damage.
   type: 0
   icon: {fileID: 21300000, guid: ba60cfcbc273a374494985307ae3810f, type: 3}
-  dropPrefab: {fileID: 3450985969775870660, guid: 97b7650d079c8de42a72901f95f8ba55, type: 3}
+  dropPrefab: {fileID: 6547319848493512718, guid: fe5129f24cc3d0d4a90c8cdf8abb15e0, type: 3}
   canStack: 0
   maxStackAmount: 0
   consumable: []
