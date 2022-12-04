@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 5644
+  controlID: 6387
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -45,9 +45,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 899
+    x: 870
     y: 73
-    width: 350
+    width: 379
     height: 497
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -95,10 +95,10 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 350
+      width: 379
       height: 476
-    m_Scale: {x: 0.18229167, y: 0.18229167}
-    m_Translation: {x: 175, y: 238}
+    m_Scale: {x: 0.19739583, y: 0.19739583}
+    m_Translation: {x: 189.5, y: 238}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -106,12 +106,12 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -960
-      y: -1305.6
+      y: -1205.6992
       width: 1920
-      height: 2611.2
+      height: 2411.3984
     m_MinimalGUI: 1
-  m_defaultScale: 0.18229167
-  m_LastWindowPixelSize: {x: 350, y: 497}
+  m_defaultScale: 0.19739583
+  m_LastWindowPixelSize: {x: 379, y: 497}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 5645
+  controlID: 6388
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 5646
+  controlID: 6389
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -227,21 +227,21 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: dad7ffffe2e6ffffe6faffff00650000e86700000068000012680000
+      m_ExpandedIDs: e6faffff00650000e867000000680000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Survival Melee Weapon 4
-        m_OriginalName: Survival Melee Weapon 4
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -6436
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -268,7 +268,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 283
     y: 0
-    width: 616
+    width: 587
     height: 518
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
@@ -298,9 +298,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 298
+    x: 283
     y: 73
-    width: 542
+    width: 585
     height: 497
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -503,9 +503,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.8929367, y: 8.126163, z: 1.4705722}
+    m_Target: {x: 2.210455, y: 7.064129, z: 1.4555151}
     speed: 2
-    m_Value: {x: 0.8929367, y: 8.126163, z: 1.4705722}
+    m_Value: {x: 2.210455, y: 7.064129, z: 1.4555151}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -552,9 +552,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.669
   m_Rotation:
-    m_Target: {x: -0.095625564, y: 0.10491568, z: -0.010143712, w: -0.9898369}
+    m_Target: {x: 0.20642486, y: 0.64111936, z: -0.18492073, w: 0.7156902}
     speed: 2
-    m_Value: {x: -0.09562406, y: 0.104914024, z: -0.010143553, w: -0.9898213}
+    m_Value: {x: 0.20641935, y: 0.64110225, z: -0.1849158, w: 0.71567106}
   m_Size:
     m_Target: 3.413878
     speed: 2
@@ -605,7 +605,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 283
     y: 73
-    width: 614
+    width: 585
     height: 497
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -662,9 +662,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 899
+    x: 870
     y: 0
-    width: 352
+    width: 381
     height: 518
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -697,7 +697,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 3609
+  controlID: 6474
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -715,7 +715,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 655
+    width: 694
     height: 249
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
@@ -747,7 +747,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 591
-    width: 654
+    width: 693
     height: 228
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -766,22 +766,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Prefabs/Weapons
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 75
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Prefabs/Weapons
   m_LastFoldersGridSize: 75
   m_LastProjectPath: C:\Users\USER\UnityProject\GitHub\MyUdemyZombie\MyUdemyZombie
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 112}
-    m_SelectedIDs: 5e6c0000
-    m_LastClickedID: 27742
-    m_ExpandedIDs: 00000000486c00005a6c0000a477000000ca9a3b
+    scrollPos: {x: 0, y: 164}
+    m_SelectedIDs: 426d0000
+    m_LastClickedID: 27970
+    m_ExpandedIDs: 00000000626c00000c6d00001a6d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -809,7 +809,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000486c000000ca9a3b
+    m_ExpandedIDs: 00000000626c00000c6d00001a6d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -861,7 +861,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 76}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 75
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
@@ -887,7 +887,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 591
-    width: 654
+    width: 693
     height: 228
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -908,9 +908,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 655
+    x: 694
     y: 0
-    width: 596
+    width: 557
     height: 249
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
@@ -939,9 +939,9 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 655
+    x: 694
     y: 591
-    width: 594
+    width: 555
     height: 228
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -949,7 +949,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -6430
+  m_LastSelectedObjectID: -25940
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -969,8 +969,8 @@ MonoBehaviour:
     y: 0
     width: 349
     height: 767
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}

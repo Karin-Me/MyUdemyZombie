@@ -22,14 +22,18 @@ public class EquipTools : Equip
 
     public override void OnAttackInput()
     {
-        attacking = true;
-        itemAnim.SetTrigger("Attack");
-        Invoke("OnCanAttack", attackRate);
+        if (!attacking)
+        {
+            attacking = true;
+            itemAnim.SetTrigger("Attack");
+            Invoke("OnCanAttack", attackRate);
+        }
+        
     }
 
     void OnCanAttack()
     {
-        attacking = true;
+        attacking = false;
     }
 
     public void OnHit()
