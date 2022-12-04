@@ -26,6 +26,7 @@ public class Inventory : MonoBehaviour
     public GameObject unequipButton;
     private PlayerController controller;
     private PlayerNeeds needs;
+    private EquipTools tools;
     private int curEquipIndex;
     [Header("Events")]
     public UnityEvent onOpenInventory;
@@ -39,6 +40,12 @@ public class Inventory : MonoBehaviour
         instance = this;
         controller = GetComponent<PlayerController>();
         needs = GetComponent<PlayerNeeds>();
+
+    }
+
+    private void Update()
+    {
+        tools = GameObject.FindObjectOfType<EquipTools>();
     }
 
     private void Start()
@@ -258,19 +265,50 @@ public class Inventory : MonoBehaviour
 
     public void OnUseButton()
     {
+        // if selected item is the item that we can consume then loop through selected item and give the value
         if (selectedItem.item.type == ItemType.Consumable)
         {
             for (int x = 0; x < selectedItem.item.consumable.Length; x++)
             {
                 switch (selectedItem.item.consumable[x].type)
                 {
-                    case ConsumableType.Health: needs.Heal(selectedItem.item.consumable[x].value);
-                    break;
-                    case ConsumableType.Hunger: needs.Eat(selectedItem.item.consumable[x].value);
-                    break;
-                    case ConsumableType.Thirst: needs.Drink(selectedItem.item.consumable[x].value);
-                    break;
+                    case ConsumableType.Health:
+                        needs.Heal(selectedItem.item.consumable[x].value);
+                        break;
+                    case ConsumableType.Hunger:
+                        needs.Eat(selectedItem.item.consumable[x].value);
+                        break;
+                    case ConsumableType.Thirst:
+                        needs.Drink(selectedItem.item.consumable[x].value);
+                        break;
                 }
+                // if consumable is range weapon ammo
+                if (tools != null && tools.assaultType == true)
+                {
+                    switch (selectedItem.item.consumable[x].type)
+                    {
+                        case ConsumableType.AssaultAmmo:
+                            tools.AssaultReload(selectedItem.item.consumable[x].value);
+                            break;
+                        default: return;
+                    }
+                }
+                else if (tools != null && tools.pistolType == true)
+                {
+                    switch (selectedItem.item.consumable[x].type)
+                    {
+                        case ConsumableType.pistolAmmo:
+                            tools.PistolReload(selectedItem.item.consumable[x].value);
+                            break;
+                        default: return;
+                    }
+                }
+
+                else
+                {
+                    return;
+                }
+
             }
         }
 

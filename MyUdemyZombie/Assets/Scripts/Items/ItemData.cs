@@ -14,7 +14,9 @@ public enum ConsumableType  // 소모품 타입
 {
     Hunger,
     Thirst,
-    Health
+    Health,
+    pistolAmmo,
+    AssaultAmmo
 }
 
 
