@@ -10,9 +10,17 @@ public class EquipTools : Equip
     public bool DoesGatherResources;
     public bool doesdealDamage;
     public int damage;
+    [Header("Ranged Weapon")]
+    public bool pistolType;
+    public bool assaultType;
+    public GameObject muzzle;   // ÃÑ±¸
+    public Transform muzzlePoint;
+    public AudioClip shotSound;
+    private AudioSource audios;
 
     private Animator itemAnim;
     private Camera cam;
+    public Sprite weaponSprite;
 
     private void Awake()
     {
@@ -24,9 +32,13 @@ public class EquipTools : Equip
     {
         if (!attacking)
         {
+
             attacking = true;
             itemAnim.SetTrigger("Attack");
             Invoke("OnCanAttack", attackRate);
+
+
+           
         }
         
     }

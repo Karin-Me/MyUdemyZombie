@@ -67,8 +67,10 @@
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\Items\ItemObject.cs" />
     <Compile Include="Assets\Scripts\PlayerNeeds.cs" />
+    <Compile Include="Assets\Scripts\AmmoManager.cs" />
     <Compile Include="Assets\Scripts\UI\ItemSlotUI.cs" />
     <Compile Include="Assets\Scripts\TestEnemy.cs" />
+    <Compile Include="Assets\Scripts\ReloadPistol.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
