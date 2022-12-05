@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\EquipManager.cs" />
     <Compile Include="Assets\Scripts\Items\ItemData.cs" />
+    <Compile Include="Assets\Character\Latifa V2 3D - Anime Style\Demo\Scripts\UIManager.cs" />
     <Compile Include="Assets\Scripts\EquipTools.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\ReloadPistol.cs" />
@@ -71,7 +72,6 @@
     <Compile Include="Assets\Scripts\AmmoManager.cs" />
     <Compile Include="Assets\Scripts\UI\ItemSlotUI.cs" />
     <Compile Include="Assets\Scripts\TestEnemy.cs" />
-    <Compile Include="Assets\Character\Latifa V2 3D - Anime Style\Demo\Scripts\UIManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
