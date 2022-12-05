@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
 
 public class EquipTools : Equip
 {
+
     public float attackRate;
     private bool attacking;
     public float attackDistance;
@@ -22,19 +26,20 @@ public class EquipTools : Equip
     private Camera cam;
     public Sprite weaponSprite;
 
+
     private void Awake()
     {
         itemAnim = GetComponent<Animator>();
         cam = Camera.main;
         audios = GetComponent<AudioSource>();
+
     }
-
-
 
     private void Start()
     {
         PlayerPrefs.GetFloat("CurrentPistolAmmo");
         PlayerPrefs.GetFloat("CurrentAssaultAmmo");
+
     }
 
 
@@ -49,30 +54,32 @@ public class EquipTools : Equip
         }
         else if (!attacking && pistolType && AmmoManager.instance.curPistolAmmo > 0)
         {
+
             attacking = true;
             itemAnim.SetTrigger("Attack");
             Invoke("OnCanAttack", attackRate);
             GameObject obj = Instantiate(muzzle, muzzlePoint.transform.position,
                                         muzzlePoint.transform.rotation * Quaternion.Euler(90, 0, 0));
-            Destroy(obj, 0.1f);
+            Destroy(obj, 0.05f);
             audios.PlayOneShot(shotSound);
 
-            AmmoManager.instance.curPistolAmmo--;
+            AmmoManager.instance.curPistolAmmo --;
             PlayerPrefs.SetFloat("CurrentPistolAmmo", AmmoManager.instance.curPistolAmmo);
         }
-
         else if (!attacking && assaultType && AmmoManager.instance.curAssaultAmmo > 0)
         {
+
             attacking = true;
             itemAnim.SetTrigger("Attack");
             Invoke("OnCanAttack", attackRate);
             GameObject obj = Instantiate(muzzle, muzzlePoint.transform.position,
                                         muzzlePoint.transform.rotation * Quaternion.Euler(90, 0, 0));
-            Destroy(obj, 0.1f);
+            Destroy(obj, 0.05f);
             audios.PlayOneShot(shotSound);
-            // curAmmo--;
+
             AmmoManager.instance.curAssaultAmmo--;
             PlayerPrefs.SetFloat("CurrentAssaultAmmo", AmmoManager.instance.curAssaultAmmo);
+
         }
 
 

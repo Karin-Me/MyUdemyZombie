@@ -2,8 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-// enum 타입은 상수의 열거형이다.
-public enum ItemType
+public enum ItemType    // enum 타입은 상수의 열거형이다.
 {
     equipable,  // 장비 가능, 사용 가능한 장비 같다.
     Consumable, // 소모품, 물약이나 음식같은 소모품들.
@@ -57,6 +56,5 @@ public class ItemDataConsumable
 {
     public ConsumableType type;
     public float value;
-
 
 }

@@ -39,18 +39,15 @@ public class AmmoManager : MonoBehaviour
             WeaponUI.SetActive(true);
             icon.sprite = equipTools.weaponSprite;
             AmmoText.text = string.Empty;
-            if (equipTools.assaultType == true)
-            {
-                AmmoText.text = ("" + curAssaultAmmo + "/" + "" + MaxAssaultAmmo).ToString();
-            }
-            else if (equipTools.pistolType == true)
-            {
-                AmmoText.text = ("" + curPistolAmmo + "/" + "" + maxPistolAmmo).ToString();
-            }
+            if (equipTools.assaultType == true)            
+                AmmoText.text = ("" + curAssaultAmmo + "/" + "" + MaxAssaultAmmo).ToString();            
+            else if (equipTools.pistolType == true)            
+                AmmoText.text = ("" + curPistolAmmo + "/" + "" + maxPistolAmmo).ToString();            
         }else
         {
             WeaponUI.SetActive(false);
         }
+
     }
 
 
@@ -63,15 +60,17 @@ public class AmmoManager : MonoBehaviour
         {
             curPistolAmmo = maxPistolAmmo;
         }
+        PlayerPrefs.SetFloat("CurrentPistolAmmo", AmmoManager.instance.curPistolAmmo);
     }
 
     public void ReloadAssault(float amount)
     {
         curAssaultAmmo += amount;
+
         if (curAssaultAmmo >= MaxAssaultAmmo)
         {
             curAssaultAmmo = MaxAssaultAmmo;
         }
-
+        PlayerPrefs.SetFloat("CurrentAssaultAmmo", AmmoManager.instance.curAssaultAmmo);    
     }
 }

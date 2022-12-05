@@ -8,6 +8,7 @@ using UnityEngine.Events;
 
 public class Inventory : MonoBehaviour
 {
+
     public ItemSlotUI[] uiSlots;        // modifying slot ui
     public ItemSlot[] slots;            // holding slot data
     public GameObject inventoryWindow;  // to open and close inventory
@@ -19,7 +20,7 @@ public class Inventory : MonoBehaviour
     public TextMeshProUGUI selectedItemName;
     public TextMeshProUGUI selectedItemdescription;
     public TextMeshProUGUI selectedItemStatName;
-    public TextMeshProUGUI selectedItemStatValue; 
+    public TextMeshProUGUI selectedItemStatValue;
     public GameObject useButton;
     public GameObject dropButton;
     public GameObject equipButton;
@@ -42,6 +43,8 @@ public class Inventory : MonoBehaviour
         needs = GetComponent<PlayerNeeds>();
 
     }
+
+
 
     private void Update()
     {
@@ -70,7 +73,10 @@ public class Inventory : MonoBehaviour
 
     public void OnInventoryButton(InputAction.CallbackContext context)
     {
-        Toggle();
+        if (context.phase == InputActionPhase.Started)
+        {
+            Toggle();
+        }
     }
 
     public void Toggle()
@@ -80,7 +86,8 @@ public class Inventory : MonoBehaviour
             inventoryWindow.SetActive(false);
             onCloseInventory.Invoke();
             controller.ToggleCurcor(false);
-        }else
+        }
+        else
         {
             inventoryWindow.SetActive(true);
             onOpenInventory.Invoke();
@@ -105,11 +112,11 @@ public class Inventory : MonoBehaviour
             if (slotToStackTo != null)
             {
                 // then we are going to add to that item quantity and updating UI
-                slotToStackTo.quantity ++;
+                slotToStackTo.quantity++;
                 UpdateUI();
                 return;
             }
-        }        
+        }
 
         ItemSlot emptySlot = GetEmptySlot();
 
@@ -145,7 +152,8 @@ public class Inventory : MonoBehaviour
             {
                 // set the item
                 uiSlots[x].Set(slots[x]);
-            }else    // if there is not item inside
+            }
+            else    // if there is not item inside
             {
                 // clear that slot
                 uiSlots[x].ClearSlot();
@@ -201,8 +209,8 @@ public class Inventory : MonoBehaviour
         // inventory slot 에 아이템이 없으면 아무 작업도 하지 않습니다.
         if (slots[index].item == null)
             return;
-        
-            
+
+
 
         // selected item is equal to index of that slot
         // selecteditem 은 해당 selectedItemIndex 의 index 와 같습니다.
@@ -253,9 +261,9 @@ public class Inventory : MonoBehaviour
         selectedItem = null;
         selectedItemName.text = string.Empty;
         selectedItemdescription.text = string.Empty;
-        selectedItemStatName.text = string.Empty;        
+        selectedItemStatName.text = string.Empty;
         selectedItemStatValue.text = string.Empty;
-        
+
         // disable all buttons 모든 버튼 비활성화
         dropButton.SetActive(false);
         useButton.SetActive(false);
@@ -272,15 +280,11 @@ public class Inventory : MonoBehaviour
             {
                 switch (selectedItem.item.consumable[x].type)
                 {
-                    case ConsumableType.Health:
-                        needs.Heal(selectedItem.item.consumable[x].value);
-                        break;
-                    case ConsumableType.Hunger:
-                        needs.Eat(selectedItem.item.consumable[x].value);
-                        break;
-                    case ConsumableType.Thirst:
-                        needs.Drink(selectedItem.item.consumable[x].value);
-                        break;
+                    case ConsumableType.Health: needs.Heal(selectedItem.item.consumable[x].value); break;
+                    case ConsumableType.Hunger: needs.Eat(selectedItem.item.consumable[x].value); break;
+                    case ConsumableType.Thirst: needs.Drink(selectedItem.item.consumable[x].value); break;
+                        //case ConsumableType.AssaultAmmo: AmmoManager.instance.ReloadAssault(selectedItem.item.consumable[x].value); break;
+                        //case ConsumableType.pistolAmmo: AmmoManager.instance.ReloadPistol(selectedItem.item.consumable[x].value); break;
                 }
                 // if consumable is range weapon ammo
                 if (tools != null && tools.assaultType == true)
@@ -308,10 +312,9 @@ public class Inventory : MonoBehaviour
                 {
                     return;
                 }
-
             }
-        }
 
+        }
         RemoveSelectedItem();
     }
 
@@ -319,7 +322,7 @@ public class Inventory : MonoBehaviour
     {
         if (uiSlots[curEquipIndex].equipped)
         {
-            UnEquip(curEquipIndex);
+            Unequip(curEquipIndex);
         }
 
         uiSlots[selectedItemIndex].equipped = true;
@@ -331,7 +334,7 @@ public class Inventory : MonoBehaviour
 
     public void OnUnequipButton()
     {
-        UnEquip(selectedItemIndex);
+        Unequip(selectedItemIndex);
     }
 
     public void OnDropButton()
@@ -340,7 +343,7 @@ public class Inventory : MonoBehaviour
         RemoveSelectedItem();
     }
 
-    private void UnEquip(int index)
+    private void Unequip(int index)
     {
         uiSlots[index].equipped = false;
         EquipManager.instance.UnEquip();
@@ -359,15 +362,13 @@ public class Inventory : MonoBehaviour
         if (selectedItem.quantity == 0)
         {
             if (uiSlots[selectedItemIndex].equipped == true)
-            {
-                UnEquip(selectedItemIndex);
-            }
-                selectedItem.item = null;
-                ClearSelectedItemWindow();
-            
+                Unequip(selectedItemIndex);
 
-            UpdateUI();
+            selectedItem.item = null;
+            ClearSelectedItemWindow();
         }
+
+        UpdateUI();
     }
 
     public void RemoveItem(ItemData item)
@@ -379,6 +380,9 @@ public class Inventory : MonoBehaviour
     {
         return false;
     }
+
+
+
 }
 
 public class ItemSlot

@@ -71,13 +71,16 @@
     <Compile Include="Assets\Scripts\AmmoManager.cs" />
     <Compile Include="Assets\Scripts\UI\ItemSlotUI.cs" />
     <Compile Include="Assets\Scripts\TestEnemy.cs" />
+    <Compile Include="Assets\Character\Latifa V2 3D - Anime Style\Demo\Scripts\UIManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\Character\Latifa V2 3D - Anime Style\Advance Unlit Shader\Advance Unlit.shader" />
     <None Include="Assets\Font\hearty-kitten-demo\DEMO - PERSONAL USE ONLY - NoahType.txt" />
     <None Include="Assets\Font\misterino-demo\readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\Character\Latifa V2 3D - Anime Style\ReadMe!.txt" />
     <None Include="Assets\Font\bosento\Designer Note.txt" />
     <None Include="Assets\Font\chayton\1001fonts-chayton-eula.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />

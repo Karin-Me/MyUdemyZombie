@@ -1,0 +1,659 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.6f1 (7da38d85baf6) revision 8233869'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ko' Physical Memory: 16163 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/USER/UnityProject/GitHub/MyUdemyZombie/MyUdemyZombie
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+7451
+Successfully changed project path to: C:/Users/USER/UnityProject/GitHub/MyUdemyZombie/MyUdemyZombie
+C:/Users/USER/UnityProject/GitHub/MyUdemyZombie/MyUdemyZombie
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 97.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.6f1 (7da38d85baf6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/USER/UnityProject/GitHub/MyUdemyZombie/MyUdemyZombie/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Vendor:   NVIDIA
+    VRAM:     3990 MB
+    Driver:   30.0.15.1215
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56348
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005696 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 80.52 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.517 seconds
+Domain Reload Profiling:
+	ReloadAssembly (517ms)
+		BeginReloadAssembly (67ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (372ms)
+			LoadAssemblies (67ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (81ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (232ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (42ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (81ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (75ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003010 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\USER\UnityProject\GitHub\MyUdemyZombie\MyUdemyZombie\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\USER\UnityProject\GitHub\MyUdemyZombie\MyUdemyZombie\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 82.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.072 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1073ms)
+		BeginReloadAssembly (187ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (121ms)
+		EndReloadAssembly (790ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (205ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (424ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (82ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (236ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4067 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 55 unused Assets / (1.4 MB). Loaded Objects now: 4520.
+Memory consumption went from 230.9 MB to 229.5 MB.
+Total: 2.861300 ms (FindLiveObjects: 0.286300 ms CreateObjectMapping: 0.121200 ms MarkObjects: 2.210300 ms  DeleteObjects: 0.242400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 56152.317518 seconds.
+  path: Assets/Items/Big Medicin.asset
+  artifactKey: Guid(608c1a62777f2574eb17d8e0016a8d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/Big Medicin.asset using Guid(608c1a62777f2574eb17d8e0016a8d5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f981e2be4722550274cd9244facb1348') in 0.034689 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Items/FoodCan.asset
+  artifactKey: Guid(b975c9f906f1c5c4482bb39bae9e6da7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/FoodCan.asset using Guid(b975c9f906f1c5c4482bb39bae9e6da7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd689fa09901b07c86cd8f47b84d77c8d') in 0.005771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 49.674826 seconds.
+  path: Assets/Game Assets/Guns/assault1/assault1_diffuse.png
+  artifactKey: Guid(89fc40a82916a0c449b689ff792cbaba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/assault1/assault1_diffuse.png using Guid(89fc40a82916a0c449b689ff792cbaba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3bf8188502820a488bf31c44a60fd78') in 0.044290 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Game Assets/Guns/assault1/assault1_normal.png
+  artifactKey: Guid(b5ce058bdf628bb4bb3304265b2ab7f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/assault1/assault1_normal.png using Guid(b5ce058bdf628bb4bb3304265b2ab7f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28931a0dbe9ae10a2021e45d17c6554c') in 0.043600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.147714 seconds.
+  path: Assets/Game Assets/Guns/assault2/assault2_diffuse.png
+  artifactKey: Guid(f699987dc2b8fa147bed02b5fb7dd2c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/assault2/assault2_diffuse.png using Guid(f699987dc2b8fa147bed02b5fb7dd2c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25df8e44a637cbcb30e3c7146f53ee1b') in 0.014591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Game Assets/Guns/assault2/assault2_normal.png
+  artifactKey: Guid(f682931156928fc4e960b020752b0c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/assault2/assault2_normal.png using Guid(f682931156928fc4e960b020752b0c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da77db9e0445a27a63f5f9e93cacc02b') in 0.023961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.469113 seconds.
+  path: Assets/Game Assets/Guns/assault3/assault3_diffuse.png
+  artifactKey: Guid(a5d9ebfb627548d41ba3a8ec12550ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/assault3/assault3_diffuse.png using Guid(a5d9ebfb627548d41ba3a8ec12550ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca847235db3f6263886c5f85e587af38') in 0.015313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Game Assets/Guns/assault3/assault3_normal.png
+  artifactKey: Guid(246651ca5a975ad4998634d0c534516b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/assault3/assault3_normal.png using Guid(246651ca5a975ad4998634d0c534516b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd206e395b15ed471b1b25a06c84354a2') in 0.021278 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.851955 seconds.
+  path: Assets/Game Assets/Guns/pistol1/pistol1_diffuse.png
+  artifactKey: Guid(0d6b1249a62d53f4e8900c84722db1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/pistol1/pistol1_diffuse.png using Guid(0d6b1249a62d53f4e8900c84722db1f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d40abac4fa445f31733a295bf21cae6') in 0.013770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Game Assets/Guns/pistol1/pistol1_normal.png
+  artifactKey: Guid(a21b6f6faa594df4fa1cb1794a16a4b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/pistol1/pistol1_normal.png using Guid(a21b6f6faa594df4fa1cb1794a16a4b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c35931677ac9260ed986bdc4a6e38f9') in 0.013895 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.808126 seconds.
+  path: Assets/Game Assets/Guns/pistol2/pistol2_diffuse.png
+  artifactKey: Guid(4bc3804b3d89750428df34b00abe88d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/pistol2/pistol2_diffuse.png using Guid(4bc3804b3d89750428df34b00abe88d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2be50a03711a2e8e31106eae0503aa70') in 0.011817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Game Assets/Guns/pistol2/pistol2_normal.png
+  artifactKey: Guid(c575c41cb696525499503e0d1142dd63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/pistol2/pistol2_normal.png using Guid(c575c41cb696525499503e0d1142dd63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ccd4aba34bd97180aa2eca39b2b24fb') in 0.013824 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.827031 seconds.
+  path: Assets/Game Assets/Guns/pistol3/pistol3_diffuse.png
+  artifactKey: Guid(1ec9fe2fb7e61d24dbd51506576aa912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/pistol3/pistol3_diffuse.png using Guid(1ec9fe2fb7e61d24dbd51506576aa912) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43e4366736a7d22151be84f6bc18100f') in 0.011708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Game Assets/Guns/pistol3/pistol3_normal.png
+  artifactKey: Guid(9faebeb1b9df87d4d845ea9e89fa5a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/pistol3/pistol3_normal.png using Guid(9faebeb1b9df87d4d845ea9e89fa5a20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '127164b4b1937c0e20f9e1c64162a10f') in 0.014222 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.405303 seconds.
+  path: Assets/Game Assets/Guns/pistol4/pistol4_diffuse.png
+  artifactKey: Guid(56cbec784c34691408510d822d647cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/pistol4/pistol4_diffuse.png using Guid(56cbec784c34691408510d822d647cef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d1425d8b8e9dee90de7b192aa05172') in 0.012410 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Game Assets/Guns/pistol4/pistol4_normal.png
+  artifactKey: Guid(662ac7af64edac14388027a3cc79fe57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/pistol4/pistol4_normal.png using Guid(662ac7af64edac14388027a3cc79fe57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f1a4afb14fd947824cc41532e0e52d') in 0.017348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.015010 seconds.
+  path: Assets/Game Assets/Guns/shotgun1/shotgun1_diffuse.png
+  artifactKey: Guid(e781dc70aeb60d44f9dd7a4a02cfae58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/shotgun1/shotgun1_diffuse.png using Guid(e781dc70aeb60d44f9dd7a4a02cfae58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd54d7aeb18deb0a5ef8405f3d90a500') in 0.012782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Game Assets/Guns/shotgun1/shotgun1_normal.png
+  artifactKey: Guid(34ba857ac0ec86642b16ca7d9553e349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/shotgun1/shotgun1_normal.png using Guid(34ba857ac0ec86642b16ca7d9553e349) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '714426cf2945e7297263bf3e0a303d4e') in 0.016598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.647353 seconds.
+  path: Assets/Game Assets/Guns/shotgun2/shotgun2_diffuse.png
+  artifactKey: Guid(e09185ed5b07b374a88f54491b40380d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/shotgun2/shotgun2_diffuse.png using Guid(e09185ed5b07b374a88f54491b40380d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d9a8aa735a384939bcbc0f3aadd3ddb') in 0.012948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Game Assets/Guns/shotgun2/shotgun2_normal.png
+  artifactKey: Guid(a76206909af6a3f4a9a63824a9908939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/shotgun2/shotgun2_normal.png using Guid(a76206909af6a3f4a9a63824a9908939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fb1766324f37d9e540987065c101484') in 0.032244 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.558601 seconds.
+  path: Assets/Game Assets/Guns/smg1/smg1_diffuse.png
+  artifactKey: Guid(9ef818aed15542049ae0db5b3892e764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/smg1/smg1_diffuse.png using Guid(9ef818aed15542049ae0db5b3892e764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f1a952ba03ba9d88ae43bf4de68b6c4') in 0.013448 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Game Assets/Guns/smg1/smg1_normal.png
+  artifactKey: Guid(ce09599548bdf6549976b65ac6648c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/smg1/smg1_normal.png using Guid(ce09599548bdf6549976b65ac6648c89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bc148a4811ae486a5321d87ef05ae6e') in 0.030329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.468346 seconds.
+  path: Assets/Game Assets/Guns/sniper1/sniper1_diffuse.png
+  artifactKey: Guid(97916b008521df7409ff55d6033c520c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/sniper1/sniper1_diffuse.png using Guid(97916b008521df7409ff55d6033c520c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5f1e9791da62d70e58496865895c738') in 0.011676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Game Assets/Guns/sniper1/sniper1_normal.png
+  artifactKey: Guid(5f6903b3f56ca67429e215115a6321c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/sniper1/sniper1_normal.png using Guid(5f6903b3f56ca67429e215115a6321c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa907101980b0d56172be104f661cfc9') in 0.015060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.749391 seconds.
+  path: Assets/Game Assets/Guns/sniper2/sniper2_diffuse.png
+  artifactKey: Guid(7274816d1b008604384326cffc88cbab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/sniper2/sniper2_diffuse.png using Guid(7274816d1b008604384326cffc88cbab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ff0d6ef845127d02a646a1a18a8f62f') in 0.014655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Game Assets/Guns/sniper2/sniper2_normal.png
+  artifactKey: Guid(f2324300a85345a47a56a442d393c41b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/sniper2/sniper2_normal.png using Guid(f2324300a85345a47a56a442d393c41b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '008be7f7dbcbc8c61e9d05e63102ba78') in 0.014091 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 56.416837 seconds.
+  path: Assets/Game Assets/modern-weapons/Pistol/Textures/Pistol_Normal.png
+  artifactKey: Guid(d4b1e0b19f8ca7446a637eaa234c460a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/modern-weapons/Pistol/Textures/Pistol_Normal.png using Guid(d4b1e0b19f8ca7446a637eaa234c460a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92b64564d1eae64d68a9088c8f533288') in 0.015211 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 25.619837 seconds.
+  path: Assets/Game Assets/Guns/assault4/assault4_diffuse.png
+  artifactKey: Guid(482cc8b3849e01e479e258dc2b8405b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/assault4/assault4_diffuse.png using Guid(482cc8b3849e01e479e258dc2b8405b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88df549d48ab35c423da5396adb7b4a3') in 0.014995 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Game Assets/Guns/assault4/assault4_normal.png
+  artifactKey: Guid(d5baff63e2303fd46998bc9b9fc03166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/assault4/assault4_normal.png using Guid(d5baff63e2303fd46998bc9b9fc03166) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adb6bc4d4d8d04b0056296c485760357') in 0.031400 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003347 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\USER\UnityProject\GitHub\MyUdemyZombie\MyUdemyZombie\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\USER\UnityProject\GitHub\MyUdemyZombie\MyUdemyZombie\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.62 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.857 seconds
+Domain Reload Profiling:
+	ReloadAssembly (858ms)
+		BeginReloadAssembly (104ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (685ms)
+			LoadAssemblies (61ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (212ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (320ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (60ms)
+				ProcessInitializeOnLoadAttributes (219ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4020 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (1.4 MB). Loaded Objects now: 4540.
+Memory consumption went from 230.9 MB to 229.6 MB.
+Total: 3.342300 ms (FindLiveObjects: 0.278400 ms CreateObjectMapping: 0.405400 ms MarkObjects: 2.360400 ms  DeleteObjects: 0.297300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 814.550938 seconds.
+  path: Assets/Game Assets/bg2.png
+  artifactKey: Guid(f31855d1264c8064e9a83d204a803135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/bg2.png using Guid(f31855d1264c8064e9a83d204a803135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '431fc1ad79fd917ac76f43fb7834c4d3') in 0.216040 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.018525 seconds.
+  path: Assets/Game Assets/Bandit_WeaponsPackage/Materials/Bomb.mat
+  artifactKey: Guid(1d422b022f9faa84facf12f6a8eff949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Bandit_WeaponsPackage/Materials/Bomb.mat using Guid(1d422b022f9faa84facf12f6a8eff949) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a601710b838a5afedce05f1d80879357') in 0.090039 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Game Assets/Bandit_WeaponsPackage/Materials/Grenade.mat
+  artifactKey: Guid(f77333b8b2af30848bca15df8fd44cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Bandit_WeaponsPackage/Materials/Grenade.mat using Guid(f77333b8b2af30848bca15df8fd44cc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3aefe2c0c57ac59194921c06ee1334e') in 0.061948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Game Assets/Bandit_WeaponsPackage/Materials/M500.mat
+  artifactKey: Guid(08d359bddecf24f4ca02756c62ebbd20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Bandit_WeaponsPackage/Materials/M500.mat using Guid(08d359bddecf24f4ca02756c62ebbd20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c922bb1787508e4911da235cd0db6a90') in 0.066600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Game Assets/Bandit_WeaponsPackage/Materials/SAR2000.mat
+  artifactKey: Guid(93a8b819a694557468162c1c977dfd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Bandit_WeaponsPackage/Materials/SAR2000.mat using Guid(93a8b819a694557468162c1c977dfd73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49f9ac62a2309441a1d1bdb82db1cb61') in 0.034571 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Game Assets/Bandit_WeaponsPackage/Materials/FlashBang.mat
+  artifactKey: Guid(0c16ec447dac82e40878f3431535d1b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Bandit_WeaponsPackage/Materials/FlashBang.mat using Guid(0c16ec447dac82e40878f3431535d1b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '670a0e0c313eafef9172bd2857c0ced1') in 0.027237 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.592184 seconds.
+  path: Assets/Game Assets/Bandit_WeaponsPackage/Modles/Bomb.FBX
+  artifactKey: Guid(b2cfa8846ffe4f34fa586e35b7ade848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Bandit_WeaponsPackage/Modles/Bomb.FBX using Guid(b2cfa8846ffe4f34fa586e35b7ade848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '679a55fb27d9b0f5c6a0f61e7e8db2c7') in 0.035883 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Game Assets/Bandit_WeaponsPackage/Modles/FlashBang.FBX
+  artifactKey: Guid(f663b9c1bcef81441914bdcbb5bd3546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Bandit_WeaponsPackage/Modles/FlashBang.FBX using Guid(f663b9c1bcef81441914bdcbb5bd3546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bd25273d8bb9480c14559be44164bd5') in 0.063651 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Game Assets/Bandit_WeaponsPackage/Modles/SAR2000.FBX
+  artifactKey: Guid(f4a1284f2d77ca441b59035af503f285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Bandit_WeaponsPackage/Modles/SAR2000.FBX using Guid(f4a1284f2d77ca441b59035af503f285) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fdba76c515d8e2986b111f15dd798bb') in 0.104686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Game Assets/Bandit_WeaponsPackage/Modles/Knife.FBX
+  artifactKey: Guid(95aadfb0fcf33694188ee51126d6ebb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Bandit_WeaponsPackage/Modles/Knife.FBX using Guid(95aadfb0fcf33694188ee51126d6ebb4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '051f6ef5e332b4328dd8192064ba701f') in 0.020108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Game Assets/Bandit_WeaponsPackage/Modles/M500.FBX
+  artifactKey: Guid(717a51c07ec389a42ad72beeab0f5178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Bandit_WeaponsPackage/Modles/M500.FBX using Guid(717a51c07ec389a42ad72beeab0f5178) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31eb0e70e12c21481cefea2828e30ecd') in 0.092856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Game Assets/Bandit_WeaponsPackage/Modles/Stand.obj
+  artifactKey: Guid(bee2eee99ab321c4ba31e3a53c2d4d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Bandit_WeaponsPackage/Modles/Stand.obj using Guid(bee2eee99ab321c4ba31e3a53c2d4d7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3db9b1e00a73f3016e8d078fa79f917d') in 0.023380 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.623264 seconds.
+  path: Assets/Game Assets/Bandit_WeaponsPackage/Prefabs/Bomb.prefab
+  artifactKey: Guid(ad6089cac3444d84787ed5d3ce2b4296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Bandit_WeaponsPackage/Prefabs/Bomb.prefab using Guid(ad6089cac3444d84787ed5d3ce2b4296) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb2d393135b0a248021bfab61811454d') in 0.027597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Game Assets/Bandit_WeaponsPackage/Prefabs/M10.prefab
+  artifactKey: Guid(3de3e928b09b435498a22492f928cc18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Bandit_WeaponsPackage/Prefabs/M10.prefab using Guid(3de3e928b09b435498a22492f928cc18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '738bed7db35341a8e5b70c55a0af0e6c') in 0.029431 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Game Assets/Bandit_WeaponsPackage/Prefabs/M500.prefab
+  artifactKey: Guid(c51d823049bc09049a2f2e88b1500d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Bandit_WeaponsPackage/Prefabs/M500.prefab using Guid(c51d823049bc09049a2f2e88b1500d2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df526d4f510315bcd56f03e31f7cdc31') in 0.036043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Game Assets/Bandit_WeaponsPackage/Prefabs/FlashBang.prefab
+  artifactKey: Guid(812945f3fb8a069478979aef799adc2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Bandit_WeaponsPackage/Prefabs/FlashBang.prefab using Guid(812945f3fb8a069478979aef799adc2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0996fd97174aaf24a6e4c79b4aab1ac6') in 0.046274 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Game Assets/Bandit_WeaponsPackage/Prefabs/M590.prefab
+  artifactKey: Guid(d23a8096a28feda43abefd7286bc584b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Bandit_WeaponsPackage/Prefabs/M590.prefab using Guid(d23a8096a28feda43abefd7286bc584b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '653d75d6c074be0c3fcc28f9b516ef59') in 0.032429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2313.077568 seconds.
+  path: Assets/Game Assets/Item Icon/4.png
+  artifactKey: Guid(34e71aa10eaa6594d8f958e9ee933c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Item Icon/4.png using Guid(34e71aa10eaa6594d8f958e9ee933c95) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af93929a9bb3e45bd1e40c5fddab8dc3') in 0.037797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Game Assets/Item Icon/5.png
+  artifactKey: Guid(3c8010c4a8032ac4597ff2d9310163d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Item Icon/5.png using Guid(3c8010c4a8032ac4597ff2d9310163d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b82f1cabc5be0b15427e605002c626c') in 0.041461 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Game Assets/Item Icon/19.png
+  artifactKey: Guid(4aa69dc876a881c429edc093ac1aab56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Item Icon/19.png using Guid(4aa69dc876a881c429edc093ac1aab56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7daea103503a80712e75757b129ef81a') in 0.040947 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Game Assets/Item Icon/2DIcons/Icons/BuildersTorch.png
+  artifactKey: Guid(9f0bd60ad13ff5c4b80ab89879c5bac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Item Icon/2DIcons/Icons/BuildersTorch.png using Guid(9f0bd60ad13ff5c4b80ab89879c5bac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e13648c251b0de909f12e5f5007677f') in 0.025885 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Game Assets/Sprites/19.png
+  artifactKey: Guid(04b5bff6e88eeb24fbce93885ca5d481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Sprites/19.png using Guid(04b5bff6e88eeb24fbce93885ca5d481) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a2d58be866fe8bcb413a5e9613c226a') in 0.036150 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Game Assets/Item Icon/2DIcons/Icons/Crowbar.png
+  artifactKey: Guid(5ecdedbd2cd2582478b24470b846be29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Item Icon/2DIcons/Icons/Crowbar.png using Guid(5ecdedbd2cd2582478b24470b846be29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eff1aa9c81e129a47008f45064908359') in 0.030384 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Game Assets/Item Icon/2DIcons/Icons/Chainsaw.png
+  artifactKey: Guid(00e642da77360184290b0ac95efa67a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Item Icon/2DIcons/Icons/Chainsaw.png using Guid(00e642da77360184290b0ac95efa67a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf66dd4e16bc9001d88b39f0a4d1ab1b') in 0.051976 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Game Assets/Item Icon/24.png
+  artifactKey: Guid(5ad2b64a07ed58940be3ec5a596b74d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Item Icon/24.png using Guid(5ad2b64a07ed58940be3ec5a596b74d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0e7aa163a44cce6e7967c45159fdb77') in 0.036760 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Game Assets/Button_SS_Hover.png
+  artifactKey: Guid(3a5b00c0f3f86ca4c9ad3986c3a2c9e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Button_SS_Hover.png using Guid(3a5b00c0f3f86ca4c9ad3986c3a2c9e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03920f90364667e54bc79bbe8f6541e9') in 0.017829 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Game Assets/Item Icon/2DIcons/Icons/Clock.png
+  artifactKey: Guid(8e5cf5d9f5a6ef349be51c5b06e2f308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Item Icon/2DIcons/Icons/Clock.png using Guid(8e5cf5d9f5a6ef349be51c5b06e2f308) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '384899af95a7f623dedbf931f566f69f') in 0.028238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Game Assets/Item Icon/18.png
+  artifactKey: Guid(4db2f147628940646b8c560723d26c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Item Icon/18.png using Guid(4db2f147628940646b8c560723d26c6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9d5285d97dcddb1c26985d5a509c02c') in 0.030701 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.917714 seconds.
+  path: Assets/Game Assets/Item Icon/2DIcons/Icons/dia2 club.png
+  artifactKey: Guid(ba60cfcbc273a374494985307ae3810f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Item Icon/2DIcons/Icons/dia2 club.png using Guid(ba60cfcbc273a374494985307ae3810f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6de6dfba28a013690d8d415aee81211') in 0.024140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Game Assets/Sprites/element_0094_fire.png
+  artifactKey: Guid(6c2282314db683e4085a169b86029e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Sprites/element_0094_fire.png using Guid(6c2282314db683e4085a169b86029e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92acf9a45458227faf3a8ae6034942aa') in 0.014294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.065928 seconds.
+  path: Assets/Game Assets/Item Icon/2DIcons/Icons/Flashlight_1.png
+  artifactKey: Guid(43d27c85f3039924795605d5a5782ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Item Icon/2DIcons/Icons/Flashlight_1.png using Guid(43d27c85f3039924795605d5a5782ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e37aadd37ee88d05e3d5d98269525771') in 0.020887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.046399 seconds.
+  path: Assets/Game Assets/Sprites/hp_full.png
+  artifactKey: Guid(13eefa189c9a92e4c9498324949698ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Sprites/hp_full.png using Guid(13eefa189c9a92e4c9498324949698ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75f18424b022dbc4e2d2e8aa793ea063') in 0.014294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Game Assets/Item Icon/2DIcons/Icons/IceAxe.png
+  artifactKey: Guid(2b092ad8d1fa42646ba1854df9275ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Item Icon/2DIcons/Icons/IceAxe.png using Guid(2b092ad8d1fa42646ba1854df9275ded) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc4d2e36bf6700de437ade4014405826') in 0.019711 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.578113 seconds.
+  path: Assets/Game Assets/Inventory2.png
+  artifactKey: Guid(257ff5556da796a44ad945a830d1d837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Inventory2.png using Guid(257ff5556da796a44ad945a830d1d837) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3be4b6da0118e0a5e42107b61abd0696') in 0.082319 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.070639 seconds.
+  path: Assets/Game Assets/Sprites/magic_full_bar.png
+  artifactKey: Guid(cc4fc05f0f6f96145b5bc074203e0cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Sprites/magic_full_bar.png using Guid(cc4fc05f0f6f96145b5bc074203e0cd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de99ab38093396a283483bd85ec5d135') in 0.016043 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.360287 seconds.
+  path: Assets/Character/Latifa V2 3D - Anime Style/Demo/Assets/Panel bg.png
+  artifactKey: Guid(42ea291fcfdb9f944913f63feff53578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/Latifa V2 3D - Anime Style/Demo/Assets/Panel bg.png using Guid(42ea291fcfdb9f944913f63feff53578) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9768cd9d1c5fea18780fe0fca7c14246') in 0.080869 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.099906 seconds.
+  path: Assets/Game Assets/Scope Overlay/scope overlay 3.png
+  artifactKey: Guid(d4d13a8cd2ddbfb4c8c6987664ebebff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Scope Overlay/scope overlay 3.png using Guid(d4d13a8cd2ddbfb4c8c6987664ebebff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04c31db248fff61dcf0c999ec9a148df') in 0.045935 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.159467 seconds.
+  path: Assets/Game Assets/Environment/Sprites/Needs/SeekPng.com_fried-chicken-png_191700.png
+  artifactKey: Guid(7335dc173af70b94e97d6d2da8b0cb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Environment/Sprites/Needs/SeekPng.com_fried-chicken-png_191700.png using Guid(7335dc173af70b94e97d6d2da8b0cb39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e803271645896a1eb93867e0918dbcf0') in 0.054216 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.105330 seconds.
+  path: Assets/Game Assets/Sprites/skill icon 93.png
+  artifactKey: Guid(d6f7b14d44ca61c44ae1438bffebcbdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Sprites/skill icon 93.png using Guid(d6f7b14d44ca61c44ae1438bffebcbdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd315f076d0b2d21a6bb25e6a6e9481e') in 0.030886 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.101792 seconds.
+  path: Assets/Game Assets/Sprites/stamina_full_bar.png
+  artifactKey: Guid(5e849a2a94061204c8842d0614b3d246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Sprites/stamina_full_bar.png using Guid(5e849a2a94061204c8842d0614b3d246) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d1416fdb09552c871c74b5384353626') in 0.013646 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.594912 seconds.
+  path: Assets/Game Assets/Item Icon/Weapon Icons/Styled-Grenade.png
+  artifactKey: Guid(1f3e56584a9357248b105d4aa53e12a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Item Icon/Weapon Icons/Styled-Grenade.png using Guid(1f3e56584a9357248b105d4aa53e12a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d988010047bc93938896a24d146a195') in 0.027970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Game Assets/Item Icon/Weapon Icons/Styled-Pistol.png
+  artifactKey: Guid(1f8934c21d0cb18419f788a463d77b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Item Icon/Weapon Icons/Styled-Pistol.png using Guid(1f8934c21d0cb18419f788a463d77b5d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c329172ffc163e269191bc2ffa17bf3') in 0.039686 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.184115 seconds.
+  path: Assets/Character/Latifa V2 3D - Anime Style/Demo/Assets/triangle-up-512.png
+  artifactKey: Guid(edacbef9f7321b344970262f7907dd14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Character/Latifa V2 3D - Anime Style/Demo/Assets/triangle-up-512.png using Guid(edacbef9f7321b344970262f7907dd14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6df4d08badec7a0e362106f845d0657') in 0.026418 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

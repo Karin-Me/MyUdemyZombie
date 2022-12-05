@@ -1,0 +1,289 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.6f1 (7da38d85baf6) revision 8233869'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'ko' Physical Memory: 16163 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/USER/UnityProject/GitHub/MyUdemyZombie/MyUdemyZombie
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+7451
+Successfully changed project path to: C:/Users/USER/UnityProject/GitHub/MyUdemyZombie/MyUdemyZombie
+C:/Users/USER/UnityProject/GitHub/MyUdemyZombie/MyUdemyZombie
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 101.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.6f1 (7da38d85baf6)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/USER/UnityProject/GitHub/MyUdemyZombie/MyUdemyZombie/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Vendor:   NVIDIA
+    VRAM:     3990 MB
+    Driver:   30.0.15.1215
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56608
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005677 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 81.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.521 seconds
+Domain Reload Profiling:
+	ReloadAssembly (521ms)
+		BeginReloadAssembly (70ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (373ms)
+			LoadAssemblies (69ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (81ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (20ms)
+			SetupLoadedEditorAssemblies (234ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (43ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (81ms)
+				BeforeProcessingInitializeOnLoad (3ms)
+				ProcessInitializeOnLoadAttributes (74ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003226 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\USER\UnityProject\GitHub\MyUdemyZombie\MyUdemyZombie\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\USER\UnityProject\GitHub\MyUdemyZombie\MyUdemyZombie\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 81.58 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.136 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1137ms)
+		BeginReloadAssembly (189ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (124ms)
+		EndReloadAssembly (852ms)
+			LoadAssemblies (152ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (205ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (43ms)
+			SetupLoadedEditorAssemblies (420ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (10ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (82ms)
+				BeforeProcessingInitializeOnLoad (73ms)
+				ProcessInitializeOnLoadAttributes (234ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.73 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4067 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 55 unused Assets / (1.4 MB). Loaded Objects now: 4520.
+Memory consumption went from 230.9 MB to 229.5 MB.
+Total: 2.713900 ms (FindLiveObjects: 0.270100 ms CreateObjectMapping: 0.099300 ms MarkObjects: 2.124800 ms  DeleteObjects: 0.219200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 56144.066498 seconds.
+  path: Assets/stamina-energy-magic_bar_full.png
+  artifactKey: Guid(e6f381df53efac84a917cddcbcd46f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/stamina-energy-magic_bar_full.png using Guid(e6f381df53efac84a917cddcbcd46f17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb907eae2e049d4d7c7cf79f215d2608') in 0.085818 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.156672 seconds.
+  path: Assets/Items/Bat Weapon.asset
+  artifactKey: Guid(4ce4d0f4f6c190f439e359b7d7228cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/Bat Weapon.asset using Guid(4ce4d0f4f6c190f439e359b7d7228cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8965514be5679726afd0cb5cfa2355c') in 0.009619 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Items/Water.asset
+  artifactKey: Guid(ff84f603a76c5ca4aa0076d762231e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/Water.asset using Guid(ff84f603a76c5ca4aa0076d762231e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '387febc22afaa606b36ba81395a516aa') in 0.007271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Items/Club Weapon.asset
+  artifactKey: Guid(8355e17c981799d47bc0daee52f009fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/Club Weapon.asset using Guid(8355e17c981799d47bc0daee52f009fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e0a32edeee95396acced557c39579e') in 0.007168 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Items/Small Medicin.asset
+  artifactKey: Guid(a886de72b01dea94da24e932aec42e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Items/Small Medicin.asset using Guid(a886de72b01dea94da24e932aec42e44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e100f90f2ad0f916c6940921cdffff0') in 0.006633 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 49.675190 seconds.
+  path: Assets/Game Assets/Guns/assault1/assault1.mat
+  artifactKey: Guid(c588de1bd0ae27543958b38850e54921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/assault1/assault1.mat using Guid(c588de1bd0ae27543958b38850e54921) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eec737e6135c888e3ba605ce9ff3bd7e') in 0.148262 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.092824 seconds.
+  path: Assets/Game Assets/Guns/assault2/assault2.mat
+  artifactKey: Guid(35a5af17f562eb044a809af0526a562f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/assault2/assault2.mat using Guid(35a5af17f562eb044a809af0526a562f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5144952f03dd603eac594d447199d70d') in 0.023757 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.490411 seconds.
+  path: Assets/Game Assets/Guns/assault3/assault3.mat
+  artifactKey: Guid(9a50065a1e4866b42946175d9a5f86b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/assault3/assault3.mat using Guid(9a50065a1e4866b42946175d9a5f86b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1af171a4a34d16bca818d0b459162371') in 0.020437 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.873214 seconds.
+  path: Assets/Game Assets/Guns/pistol1/pistol1.mat
+  artifactKey: Guid(94e64d41f68240c41aabd3ef8e0368e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/pistol1/pistol1.mat using Guid(94e64d41f68240c41aabd3ef8e0368e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c137c3487d3103b70ab100a38304ff0') in 0.014225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.827453 seconds.
+  path: Assets/Game Assets/Guns/pistol2/pistol2.mat
+  artifactKey: Guid(7c16b6e19b642c247ba765631635ff9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/pistol2/pistol2.mat using Guid(7c16b6e19b642c247ba765631635ff9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8aa7a515ea9606fbe86480ea7c9f675') in 0.015746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.842411 seconds.
+  path: Assets/Game Assets/Guns/pistol3/pistol3.mat
+  artifactKey: Guid(41be456e0ecbed04dba9c27c3add980c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/pistol3/pistol3.mat using Guid(41be456e0ecbed04dba9c27c3add980c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '575a39d701d7d5845c4007aa782d60e8') in 0.014104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.423498 seconds.
+  path: Assets/Game Assets/Guns/pistol4/pistol4.mat
+  artifactKey: Guid(afdf30d8614b11d41a6337e2484e3570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/pistol4/pistol4.mat using Guid(afdf30d8614b11d41a6337e2484e3570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9cc0017732e197b1f254328c2592606') in 0.020649 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.028682 seconds.
+  path: Assets/Game Assets/Guns/shotgun1/shotgun1.mat
+  artifactKey: Guid(0c24ff3f078566f4d9d83ee8bd6a3f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/shotgun1/shotgun1.mat using Guid(0c24ff3f078566f4d9d83ee8bd6a3f72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd80b5f92504a1fad6998270cfd2261b4') in 0.021185 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.660571 seconds.
+  path: Assets/Game Assets/Guns/shotgun2/shotgun2.mat
+  artifactKey: Guid(052eb9367e604ac428a8b8c83f4584da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/shotgun2/shotgun2.mat using Guid(052eb9367e604ac428a8b8c83f4584da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cdd3ed7c3badbaf607b079d2331bf98') in 0.093769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.516330 seconds.
+  path: Assets/Game Assets/Guns/smg1/smg1.mat
+  artifactKey: Guid(42ff7de5af3ca404cbf8813deacd8dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/smg1/smg1.mat using Guid(42ff7de5af3ca404cbf8813deacd8dbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05ea41f40d7b3c1c90c764e9270f1ffe') in 0.022560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.495404 seconds.
+  path: Assets/Game Assets/Guns/sniper1/sniper1.mat
+  artifactKey: Guid(b2dfdf44d328a59449b16f2b9d82492c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/sniper1/sniper1.mat using Guid(b2dfdf44d328a59449b16f2b9d82492c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb29d9dec44f875822cf34f7e8ed65d0') in 0.016476 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.764889 seconds.
+  path: Assets/Game Assets/Guns/sniper2/sniper2.mat
+  artifactKey: Guid(533eaf1384eb72d41bbf8a25b870c0f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/sniper2/sniper2.mat using Guid(533eaf1384eb72d41bbf8a25b870c0f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fea37ecc167720bc792f7be7cf2c387c') in 0.017189 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 56.434759 seconds.
+  path: Assets/Game Assets/modern-weapons/Pistol/Textures/Pistol_Metallic.tga
+  artifactKey: Guid(88ab1de3671b79147ba7b48ce6e47a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/modern-weapons/Pistol/Textures/Pistol_Metallic.tga using Guid(88ab1de3671b79147ba7b48ce6e47a4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c60d53c9680ef3d0a48fddb0c760d51') in 0.022388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.998188 seconds.
+  path: Assets/Game Assets/Muzz/MuzzleFlash/ThirdPersonMuzzleFlash (fbx).fbx
+  artifactKey: Guid(6ca764db2ff8ce6488c85f70df48e566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Muzz/MuzzleFlash/ThirdPersonMuzzleFlash (fbx).fbx using Guid(6ca764db2ff8ce6488c85f70df48e566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0f3e05745611cb6b640febf89224efc') in 0.065366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.544716 seconds.
+  path: Assets/Game Assets/Guns/assault4/assault4.mat
+  artifactKey: Guid(a3de5fdd82f571f4eb16a3c2530b4303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Assets/Guns/assault4/assault4.mat using Guid(a3de5fdd82f571f4eb16a3c2530b4303) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0009d62e343e17b68f7ceb4a8504299c') in 0.020008 seconds 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

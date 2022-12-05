@@ -9,10 +9,10 @@ public class PlayerNeeds : MonoBehaviour, IDamageable
     public Need health;
     public Need hunger;
     public Need thirst;
+
     public float NoHungerHPDecay;
     public float noThirstHPDecay;
     public UnityEvent getDamage;
-
     private void Start()
     {
         // current value is equal to the start value
@@ -20,21 +20,19 @@ public class PlayerNeeds : MonoBehaviour, IDamageable
         health.currentValue = health.startValue;
         hunger.currentValue = hunger.startValue;
         thirst.currentValue = thirst.startValue;
+
     }
 
     private void Update()
     {
-        // reduce the value over time
-        // 시간이 지남에 따라 값을 줄입니다.
+        // reduce the value over time   // 시간이 지남에 따라 값을 줄입니다.
         hunger.Subtract(hunger.decayRate * Time.deltaTime);
         thirst.Subtract(thirst.decayRate * Time.deltaTime);
 
-        // check if hunger bar reach zero then
-        //  hunger 막대가 0에 도달하면 
+        // check if hunger bar reach zero then  //  hunger 막대가 0에 도달하면         
         if (hunger.currentValue == 0.0f)
         {
-            // reduce health depend on the value of noHungerHPDecay
-            // noHungerHPDecay 값에 따라 health 감소
+            // reduce health depend on the value of noHungerHPDecay // noHungerHPDecay 값에 따라 health 감소            
             health.Subtract(NoHungerHPDecay * Time.deltaTime);
         }
 
@@ -51,6 +49,7 @@ public class PlayerNeeds : MonoBehaviour, IDamageable
             Die();
         }
 
+
         // update sliders
         // 슬라이더 업데이트
         health.uiSlider.fillAmount = health.GetPercentage();
@@ -60,8 +59,7 @@ public class PlayerNeeds : MonoBehaviour, IDamageable
 
     public void Heal(float amount)
     {
-        // add to health depend on that amount
-        // amount 에 따라 health 가 추가됩니다..
+        // add to health depend on that amount  // amount 에 따라 health 가 추가됩니다..        
         health.Add(amount);
     }
 
@@ -77,26 +75,23 @@ public class PlayerNeeds : MonoBehaviour, IDamageable
 
     public void TakeDamage(int damageAmount)
     {
-        // reduce health depend on damage amount
-        // damage 에 따라 health 가 감소합니다.
+        // reduce health depend on damage amount    // damage 에 따라 health 가 감소합니다.
         health.Subtract(damageAmount);
-        // if we get damage then invoke
-        // damage 를 받으면 invoke 함수를 호출합니다.
+        // if we get damage then invoke     // damage 를 받으면 invoke 함수를 호출합니다.
         getDamage?.Invoke();
     }
 
     public void Die()
     {
-        Debug.Log("Player Died");        
 
+        Debug.Log("Player Died");
     }
 }
 
 [System.Serializable]
 public class Need
 {
-    public float currentValue, maxValue,
-                 startValue, regenerateRate, decayRate;
+    public float currentValue, maxValue, startValue, regenerateRate, decayRate;
     public Image uiSlider;
 
     public void Add(float amount)
